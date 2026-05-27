@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Reducing No-Shows: Why Reminders Aren't Enough — Sage Health</title>
+<meta name="description" content="Standard EHR reminders are one-way broadcasts — and they have hit a ceiling at the 15–20% no-show rate. The next step change comes from conversation, not repetition.">
+<meta property="og:title" content="Reducing No-Shows: Why Reminders Aren't Enough — Sage Health">
+<meta property="og:description" content="Standard EHR reminders are one-way broadcasts. The next step change in no-show rates comes from conversation, not repetition.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sagehealth.partners/insights/reducing-no-shows-beyond-reminders.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V11" stroke="currentColor" stroke-width="1.5" opacity=".6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="12 5 19 12 12 19" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-agents" viewBox="0 0 24 24"><path d="M12 3a3.5 3.5 0 0 0-3.5 3.5v.2a3 3 0 0 0-1.5 5.3 3 3 0 0 0 1.5 5.5v.5a3 3 0 0 0 7 0v-.5a3 3 0 0 0 1.5-5.5 3 3 0 0 0-1.5-5.3v-.2A3.5 3.5 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.5" cy="11" r="1.1" fill="currentColor"/><circle cx="18.5" cy="13" r="1.1" fill="currentColor"/><path d="M7 11h1.5M15.5 13H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".7"/></symbol>
+    <symbol id="i-insights" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="6.25" r=".7" fill="currentColor"/><circle cx="8.4" cy="6.25" r=".7" fill="currentColor"/><polyline points="6.5 16 9.5 13 12.5 15 16 11.5 18 13" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-eval" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 4V2.5A.5.5 0 0 1 9.5 2h5a.5.5 0 0 1 .5.5V4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.5l2 2 4-4" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sops" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="2.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 11.2v1.4M12 17.4v1.4M8.5 15h1.3M14.2 15h1.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-strat" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6" fill="none"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M5 3h2M13 3h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 13v3a4 4 0 0 0 4 4h.5a3.5 3.5 0 0 0 3.5-3.5V13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="11" r="2" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-pacifier" viewBox="0 0 24 24"><circle cx="12" cy="13" r="6.5" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="13" r="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 6.5V3.5M10 3.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="3.5" r=".7" fill="currentColor"/></symbol>
+    <symbol id="i-eye-2" viewBox="0 0 24 24"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2 0-3.5 1.6-3.5 3.6 0 1.6.5 2.6.9 3.6.3.7.5 1.4.6 2.2.3 2.4.7 5.4 1.5 7.7.3.9 1.1 1.4 2 1.4.8 0 1.5-.5 1.8-1.3l1-2.7c.2-.6.7-1 1.4-1h.6c.7 0 1.2.4 1.4 1l1 2.7c.3.8 1 1.3 1.8 1.3.9 0 1.7-.5 2-1.4.8-2.3 1.2-5.3 1.5-7.7.1-.8.3-1.5.6-2.2.4-1 .9-2 .9-3.6 0-2-1.5-3.6-3.5-3.6-1.2 0-2.2.5-3 1.1-.7.5-1.6.5-2.3 0-.8-.6-1.8-1.1-3-1.1Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.5 12.5 7 12.5 9 9 12 16 14.5 12.5 17 12.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21V8l6-4 6 4v13M15 21V11l6-3v13M3 21h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 11h2M7 14h2M7 17h2M18 14h0M18 17h0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header dark">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+      Sage Health
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+    <nav class="site-nav">
+      <a href="../index.html" class="nav-link">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button">Solutions <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content">
+          <div class="dropdown-col">
+            <h4>Practice AI Platform</h4>
+            <a href="../solutions/ai/agentic-suite.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-agents"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Agents Suite</span><span class="dd-item-sub">Autonomous AI agents for voice, confirmations, eligibility</span></span>
+            </a>
+            <a href="../solutions/ai/practice-bi.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-insights"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">BI Suite</span><span class="dd-item-sub">Real-time practice visibility</span></span>
+            </a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Advisory Services</h4>
+            <a href="../solutions/advisory/evaluation-framework.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-eval"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Front Desk Evaluation Framework</span><span class="dd-item-sub">Evidence-based front desk assessment</span></span>
+            </a>
+            <a href="../solutions/advisory/operational-sops.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-sops"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Operational SOP Definition</span><span class="dd-item-sub">Documented, standardized processes</span></span>
+            </a>
+            <a href="../solutions/advisory/strategic-transformation.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-strat"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Strategic Transformation</span><span class="dd-item-sub">90-day execution roadmap</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button">Specialties <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content dropdown-specialties">
+          <div>
+            <div class="spec-mega-head">Specialties</div>
+            <div class="spec-mega-grid">
+              <a href="../solutions/specialties/primary-care.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-steth"/></svg></span>
+                <span class="spec-mega-name">Primary Care</span>
+              </a>
+              <a href="../solutions/specialties/pediatrics.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pacifier"/></svg></span>
+                <span class="spec-mega-name">Pediatrics</span>
+              </a>
+              <a href="../solutions/specialties/optometry.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-eye-2"/></svg></span>
+                <span class="spec-mega-name">Optometry</span>
+              </a>
+              <a href="../solutions/specialties/dental.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-tooth"/></svg></span>
+                <span class="spec-mega-name">Dental</span>
+              </a>
+              <a href="../solutions/specialties/obgyn.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pulse"/></svg></span>
+                <span class="spec-mega-name">OB-GYN</span>
+              </a>
+              <a href="../solutions/specialties/multi-specialty.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-building"/></svg></span>
+                <span class="spec-mega-name">Multi-Specialty</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="../about.html" class="nav-link">About</a>
+      <a href="../insights/index.html" class="nav-link active">Insights</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../contact.html" class="header-cta">Schedule a Discovery Call <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <div class="menu-backdrop"></div>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="article-hero">
+    <div class="container-narrow article-hero-inner">
+      <div class="article-cat">Practice Growth</div>
+      <h1>Reducing No-Shows: Why Reminders Aren't Enough</h1>
+      <div class="article-meta-row">
+        <span>Sage Health Team</span>
+        <span>April 28, 2026</span>
+        <span>7 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="container-narrow">
+
+      <p class="lede">If you've been running a practice for any length of time, you've watched the EHR vendors trot out the same set of features — reminders, recall lists, patient portals — and call them "no-show reduction tools." If your no-show rate has been stuck between 15% and 20% for the last five years, there's a structural reason. It isn't your patients.</p>
+
+      <p>The standard EHR reminder workflow has barely changed since 2010. A patient gets a text the day before their appointment that says some version of "You have an appointment tomorrow at 9 AM. Reply Y to confirm." Some practices add a phone call. Some add an email. The pattern is the same: <strong>one-way broadcast, expecting a binary response</strong>.</p>
+
+      <p>The reason no-show rates plateau at 15–20% with this workflow isn't because patients are unreliable. It's because the workflow has zero capacity to handle the actual reason most no-shows happen — <em>life got in the way and the appointment needs to move</em>.</p>
+
+      <h2>Why patients no-show</h2>
+
+      <p>If you survey the no-shows at any independent practice over a quarter, the breakdown is consistent. Roughly two-thirds of no-shows happened because the patient knew, at some point in the prior 24 hours, that they couldn't make the appointment — but couldn't easily reschedule. Of that group:</p>
+
+      <ul>
+        <li><strong>About 40%</strong> tried to reschedule but couldn't get through on the phone — the practice was either closed, the line was busy, or the front desk was running checkout.</li>
+        <li><strong>About 25%</strong> saw the EHR reminder, thought "I need to move this," and then either forgot or didn't have time to call back during business hours.</li>
+        <li><strong>About 20%</strong> were never going to come — the appointment was scheduled too far in advance, the symptom resolved itself, the patient decided to go somewhere else.</li>
+        <li><strong>About 15%</strong> had a same-day emergency or schedule conflict they couldn't predict.</li>
+      </ul>
+
+      <p>Look at the structure: <strong>roughly 65% of no-shows were preventable with a working reschedule mechanism</strong>. The standard EHR reminder doesn't provide one. It tells the patient about the appointment; it doesn't give them a way to move it without picking up the phone.</p>
+
+      <h2>The ceiling on standard reminders</h2>
+
+      <p>Once you understand the math, the ceiling on standard reminders becomes obvious. Even if every patient who gets the reminder reads it (which they don't — open rates on EHR confirmations run 70–80%), and even if every reader who can come actually replies "Y" (they mostly don't — confirmation rates run 40–60%), you still have no mechanism for the 65% of no-shows that need a reschedule conversation.</p>
+
+      <div class="stat-callout">
+        <div class="stat-callout-num">15–20%</div>
+        <div class="stat-callout-text">The structural ceiling on no-show rates with standard one-way EHR reminders, regardless of how many touches you add or how prominent the message gets.</div>
+      </div>
+
+      <p>This is why practices that send three reminders instead of one don't see materially lower no-show rates than practices that send one. The bottleneck isn't message frequency — it's the absence of a conversation.</p>
+
+      <h2>What changes with a conversational layer</h2>
+
+      <p>The next-generation confirmation workflow looks like a conversation. The patient gets a friendly SMS the night before — not "Reply Y to confirm" but something more like "Hi Maria, reminder about your appointment tomorrow with Dr. Patel at 9:30. Reply CONFIRM or let me know if you need to move it." When the patient replies, an autonomous agent reads the intent and handles the entire conversation:</p>
+
+      <ul>
+        <li>If they confirm — the appointment marks confirmed in the EHR, copay information surfaces, insurance card request goes out if needed.</li>
+        <li>If they need to move — the agent reads live availability, offers comparable slots, books the swap, and writes both changes back to the chart.</li>
+        <li>If they want to cancel — the agent cancels the slot and triggers the wait-list backfill.</li>
+        <li>If they ask a free-text question — the agent reads intent and routes accordingly, escalating to a human when needed.</li>
+      </ul>
+
+      <blockquote>None of this is hypothetical. It's running in independent practices today. The practices that have switched from one-way reminders to conversational agents are landing in the 6–10% no-show range — well below the historical 15–20% ceiling.</blockquote>
+
+      <h2>Why the 6–10% range is the new benchmark</h2>
+
+      <p>The 6–10% no-show range is what you get when you eliminate the preventable no-shows (the 65% who needed a reschedule mechanism) and you're left with just the structural minimum — the genuinely unpredictable schedule conflicts plus the appointments that should never have been booked. <strong>Below 6% is hard to achieve in primary care because some no-shows are baked into the model</strong>; getting from 15% to 7–8% is now the realistic target for any practice willing to deploy the conversational workflow.</p>
+
+      <p>At a four-physician practice running 80 visits a day, dropping no-show rate from 15% to 8% recovers about <strong>5.6 visits per day</strong> — call it 28 visits per week. At an average revenue per visit of $120, that's $3,360 a week in recovered revenue, or about <strong>$175,000 per year</strong>. The math is consistent across the practices we've assessed.</p>
+
+      <h2>What about overbooking?</h2>
+
+      <p>Practices have historically responded to high no-show rates by overbooking — scheduling more patients than there are slots, on the assumption that some won't show. This works on average but creates two problems: when more patients show up than expected, your providers run late and patient experience degrades; when fewer than expected show up, you've still under-utilized the schedule, just in a different way.</p>
+
+      <p>A conversational confirmation workflow lets you stop guessing. Because the no-show rate drops into single digits and is predictable, you can schedule to capacity — running fewer overbooked slots, more on-time visits, less front-desk stress. The downstream effects on patient experience, staff morale, and provider satisfaction compound.</p>
+
+      <h2>What to do Monday morning</h2>
+
+      <p>The first step is to measure your current state honestly. Pull your no-show rate by visit type and time of day from your EHR for the last quarter. Look at the confirmation completion rate — what percentage of patients actually reply to the EHR reminder. The gap between confirmation completion and actual attendance is the size of the conversation-shaped hole in your workflow.</p>
+
+      <p>If the rate is above 10%, you have material headroom. Whether you fill that headroom by manually staffing a confirmation desk, deploying a conversational agent, or some hybrid — the right answer depends on your specific situation. But the answer isn't "send more reminders." That experiment has been run, and the ceiling is real.</p>
+
+      <hr>
+
+      <div class="article-author">
+        <div class="avatar">SH</div>
+        <div class="article-author-info">
+          <div class="article-author-name">Sage Health Team</div>
+          <div class="article-author-role">Practice Growth · Houston · Dallas</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-tag reveal">See It In Action</div>
+      <h2 class="cta-headline reveal">Conversations that <span class="grad">close the loop.</span></h2>
+      <p class="cta-sub reveal">A 30-minute demo walks you through a real Smart Confirmations thread on a live deployment — and the BI metrics that prove it's moving the needle.</p>
+      <div class="cta-actions reveal">
+        <a href="../contact.html" class="btn">Schedule a Demo <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        <a href="../solutions/ai/agentic-suite.html" class="btn-secondary">See the Practice Agentic Suite</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+          Sage Health
+        </div>
+        <p class="footer-tagline">Intelligent operations for the independent practice. Built by operators. Delivered with accountability.</p>
+        <div class="footer-locale">Houston · Dallas</div>
+      </div>
+      <div class="footer-col">
+        <h5>More Insights</h5>
+        <ul>
+          <li><a href="index.html">All Insights</a></li>
+          <li><a href="why-front-desk-is-your-biggest-revenue-lever.html">Front Desk Revenue Lever</a></li>
+          <li><a href="ai-agents-independent-practice-guide.html">AI Agents Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../solutions/ai/index.html">Practice AI Platform</a></li>
+          <li><a href="../solutions/advisory/index.html">Advisory Services</a></li>
+          <li><a href="../solutions/specialties/index.html">Specialties</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="mailto:umair@sagehealth.partners">umair@sagehealth.partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="legal">© <span data-year>2026</span> Sage Health Partners. All rights reserved.</div>
+      <div class="credits">sagehealth.partners</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>

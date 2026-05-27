@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OB-GYN Front Desk Operations — Sage Health Specialties</title>
+<meta name="description" content="Sage Health helps independent OB-GYN practices fix the front desk — prenatal visit cadence, insurance transitions during pregnancy, sensitive communication, postpartum follow-up, and hospital referral coordination. Houston · Dallas.">
+<meta property="og:title" content="OB-GYN Front Desk Operations — Sage Health Specialties">
+<meta property="og:description" content="OB-GYN demands efficiency and empathy at the same time. Here's how we help — prenatal cadence, trimester-aware eligibility, sensitive communication SOPs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sagehealth.partners/solutions/specialties/obgyn.html">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+<link rel="apple-touch-icon" href="../../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .sp-hero{padding:7rem 0 4rem;position:relative;overflow:hidden}
+  .sp-hero-bg{position:absolute;inset:0;background:radial-gradient(circle at 20% 40%,rgba(92,158,82,.12) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,90,39,.08) 0%,transparent 50%);pointer-events:none}
+  .sp-hero-inner{position:relative;z-index:1;display:flex;gap:2rem;align-items:center}
+  .sp-hero-icon{width:84px;height:84px;border-radius:18px;background:var(--green-light);color:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 8px 24px rgba(45,90,39,.08)}
+  .sp-hero h1{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;letter-spacing:-.026em;line-height:1.08;color:var(--text);margin-bottom:1rem}
+  .sp-hero-sub{font-family:var(--sans);font-size:clamp(1.05rem,1.4vw,1.3rem);font-weight:500;color:var(--muted);line-height:1.55;max-width:640px}
+  .sp-intro{padding:3rem 0 4rem;background:#fff}
+  .sp-intro p{font-size:1.05rem;color:var(--text);line-height:1.75;max-width:740px}
+  .sp-intro p + p{margin-top:1rem}
+  .sp-intro p strong{font-weight:600}
+  .sp-section{padding:5rem 0;border-top:1px solid var(--hairline)}
+  .sp-section.alt{background:#fafcf8}
+  .pain-list{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+  .pain-card{background:#fff;border:1px solid var(--hairline);border-radius:14px;padding:1.85rem 1.7rem;display:flex;flex-direction:column;gap:.75rem}
+  .pain-num{font-family:var(--serif);font-size:.85rem;font-weight:700;color:var(--accent);letter-spacing:.04em}
+  .pain-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text);line-height:1.3;letter-spacing:-.01em}
+  .pain-body{font-size:.94rem;color:var(--muted);line-height:1.65}
+  .pain-body strong{color:var(--text);font-weight:600}
+  .help-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem}
+  .help-pillars{display:flex;flex-direction:column;gap:.85rem}
+  .help-pillar{display:flex;gap:.9rem;padding:1rem 1.1rem;background:#fff;border:1px solid var(--hairline);border-radius:10px}
+  .help-pillar-tag{font-family:'SF Mono',ui-monospace,monospace;font-size:.66rem;font-weight:700;letter-spacing:.06em;color:var(--green);background:var(--green-light);padding:.28rem .55rem;border-radius:6px;flex-shrink:0;align-self:flex-start;white-space:nowrap}
+  .help-pillar-text{font-size:.9rem;color:var(--muted);line-height:1.55}
+  .help-pillar-text strong{color:var(--text);font-weight:600}
+  .help-concrete h4{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text);letter-spacing:-.008em;margin-bottom:1rem}
+  .concrete-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.1rem}
+  .concrete-list li{display:flex;gap:.85rem;align-items:flex-start;padding-left:0}
+  .concrete-list li::before{content:'';width:18px;height:18px;border-radius:50%;background:var(--green-light);flex-shrink:0;margin-top:.18rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5a27' stroke-width='2.5'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:11px 11px;background-repeat:no-repeat;background-position:center}
+  .concrete-list li span{font-size:.94rem;color:var(--muted);line-height:1.6}
+  .concrete-list li span strong{color:var(--text);font-weight:600;font-family:var(--serif)}
+  .metric-strip{margin-top:2.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .metric{background:#fff;border:1px solid var(--hairline);border-radius:12px;padding:1.4rem 1.4rem}
+  .metric-num{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--green);letter-spacing:-.018em;line-height:1.1}
+  .metric-lbl{font-size:.84rem;color:var(--muted);margin-top:.5rem;line-height:1.5}
+  .metric-lbl strong{color:var(--text);font-weight:600}
+  .related-row{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem}
+  .related-chip{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border:1px solid var(--hairline);border-radius:999px;font-size:.82rem;font-weight:600;color:var(--text);background:#fff;transition:background .2s,border-color .2s,color .2s}
+  .related-chip:hover{background:var(--green-light);border-color:var(--accent);color:var(--green)}
+  .related-chip svg{color:var(--accent)}
+  @media (max-width:840px){.sp-hero-inner{flex-direction:column;align-items:flex-start;gap:1.5rem}.pain-list,.help-grid,.metric-strip{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V11" stroke="currentColor" stroke-width="1.5" opacity=".6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="12 5 19 12 12 19" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M5 3h2M13 3h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 13v3a4 4 0 0 0 4 4h.5a3.5 3.5 0 0 0 3.5-3.5V13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="11" r="2" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-pacifier" viewBox="0 0 24 24"><circle cx="12" cy="13" r="6.5" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="13" r="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 6.5V3.5M10 3.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="3.5" r=".7" fill="currentColor"/></symbol>
+    <symbol id="i-eye-2" viewBox="0 0 24 24"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2 0-3.5 1.6-3.5 3.6 0 1.6.5 2.6.9 3.6.3.7.5 1.4.6 2.2.3 2.4.7 5.4 1.5 7.7.3.9 1.1 1.4 2 1.4.8 0 1.5-.5 1.8-1.3l1-2.7c.2-.6.7-1 1.4-1h.6c.7 0 1.2.4 1.4 1l1 2.7c.3.8 1 1.3 1.8 1.3.9 0 1.7-.5 2-1.4.8-2.3 1.2-5.3 1.5-7.7.1-.8.3-1.5.6-2.2.4-1 .9-2 .9-3.6 0-2-1.5-3.6-3.5-3.6-1.2 0-2.2.5-3 1.1-.7.5-1.6.5-2.3 0-.8-.6-1.8-1.1-3-1.1Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.5 12.5 7 12.5 9 9 12 16 14.5 12.5 17 12.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21V8l6-4 6 4v13M15 21V11l6-3v13M3 21h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 11h2M7 14h2M7 17h2M18 14h0M18 17h0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-agents" viewBox="0 0 24 24"><path d="M12 3a3.5 3.5 0 0 0-3.5 3.5v.2a3 3 0 0 0-1.5 5.3 3 3 0 0 0 1.5 5.5v.5a3 3 0 0 0 7 0v-.5a3 3 0 0 0 1.5-5.5 3 3 0 0 0-1.5-5.3v-.2A3.5 3.5 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.5" cy="11" r="1.1" fill="currentColor"/><circle cx="18.5" cy="13" r="1.1" fill="currentColor"/><path d="M7 11h1.5M15.5 13H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".7"/></symbol>
+    <symbol id="i-insights" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="6.25" r=".7" fill="currentColor"/><circle cx="8.4" cy="6.25" r=".7" fill="currentColor"/><polyline points="6.5 16 9.5 13 12.5 15 16 11.5 18 13" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-eval" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 4V2.5A.5.5 0 0 1 9.5 2h5a.5.5 0 0 1 .5.5V4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.5l2 2 4-4" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sops" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="2.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 11.2v1.4M12 17.4v1.4M8.5 15h1.3M14.2 15h1.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-strat" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6" fill="none"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">
+      <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+      Sage Health
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+    <nav class="site-nav">
+      <a href="../../index.html" class="nav-link">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button">Solutions <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content">
+          <div class="dropdown-col">
+            <h4>Practice AI Platform</h4>
+            <a href="../../solutions/ai/agentic-suite.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-agents"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Agents Suite</span><span class="dd-item-sub">Autonomous AI agents for voice, confirmations, eligibility</span></span>
+            </a>
+            <a href="../../solutions/ai/practice-bi.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-insights"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">BI Suite</span><span class="dd-item-sub">Real-time practice visibility</span></span>
+            </a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Advisory Services</h4>
+            <a href="../../solutions/advisory/evaluation-framework.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-eval"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Front Desk Evaluation Framework</span><span class="dd-item-sub">Evidence-based front desk assessment</span></span>
+            </a>
+            <a href="../../solutions/advisory/operational-sops.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-sops"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Operational SOP Definition</span><span class="dd-item-sub">Documented, standardized processes</span></span>
+            </a>
+            <a href="../../solutions/advisory/strategic-transformation.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-strat"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Strategic Transformation</span><span class="dd-item-sub">90-day execution roadmap</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown active">
+        <button class="nav-dropdown-trigger" type="button">Specialties <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content dropdown-specialties">
+          <div>
+            <div class="spec-mega-head">Specialties</div>
+            <div class="spec-mega-grid">
+              <a href="../../solutions/specialties/primary-care.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-steth"/></svg></span>
+                <span class="spec-mega-name">Primary Care</span>
+              </a>
+              <a href="../../solutions/specialties/pediatrics.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pacifier"/></svg></span>
+                <span class="spec-mega-name">Pediatrics</span>
+              </a>
+              <a href="../../solutions/specialties/optometry.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-eye-2"/></svg></span>
+                <span class="spec-mega-name">Optometry</span>
+              </a>
+              <a href="../../solutions/specialties/dental.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-tooth"/></svg></span>
+                <span class="spec-mega-name">Dental</span>
+              </a>
+              <a href="../../solutions/specialties/obgyn.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pulse"/></svg></span>
+                <span class="spec-mega-name">OB-GYN</span>
+              </a>
+              <a href="../../solutions/specialties/multi-specialty.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-building"/></svg></span>
+                <span class="spec-mega-name">Multi-Specialty</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="../../about.html" class="nav-link">About</a>
+      <a href="../../insights/index.html" class="nav-link">Insights</a>
+      <a href="../../contact.html" class="nav-link">Contact</a>
+      <a href="../../contact.html" class="header-cta">Schedule a Discovery Call <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <div class="menu-backdrop"></div>
+  </div>
+</header>
+
+<main class="page" style="background:linear-gradient(180deg,#fafcf8 0%,#f2f5f0 100%);padding-top:5rem">
+
+  <section class="sp-hero">
+    <div class="sp-hero-bg"></div>
+    <div class="container">
+      <div class="eyebrow reveal" style="margin-bottom:1.4rem"><a href="index.html" style="color:inherit;text-decoration:none">Specialties</a> · OB-GYN</div>
+      <div class="sp-hero-inner reveal">
+        <div class="sp-hero-icon"><svg width="42" height="42"><use href="#i-pulse"/></svg></div>
+        <div>
+          <h1>We understand <em class="em-dark">OB-GYN</em> practices.</h1>
+          <p class="sp-hero-sub">The only specialty where the patient relationship spans pregnancy, postpartum, peri-menopause, and beyond. Where 14 prenatal visits are non-negotiable. Where every front desk call could be about something joyful — or something devastating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-intro">
+    <div class="container-narrow">
+      <div class="reveal">
+        <p>OB-GYN is the longest-arc specialty in primary medicine. The relationship that begins with a teenager's first well-woman visit can run through pregnancy, postpartum, and into the perimenopause years. The same front desk fields appointments across all of it — and the tone required for each is completely different.</p>
+        <p>Operationally, OB-GYN is brutal in a quiet way. Prenatal cadence is rigid — 14 visits over roughly 36 weeks, with insurance transitions that can happen at any point. Postpartum visits are notoriously under-attended. And the front desk that calls to reschedule a missed appointment doesn't always know whether the patient is recovering from a miscarriage or just behind on her calendar.</p>
+        <p><strong>The right system supports both efficiency and empathy.</strong> Most don't. Ours does.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">The Front Desk Challenge</div>
+        <h2 class="section-title">Five challenges <em class="em-dark">unique to OB-GYN.</em></h2>
+      </div>
+
+      <div class="pain-list reveal-stagger">
+        <article class="pain-card">
+          <div class="pain-num">01</div>
+          <div class="pain-title">Prenatal visit cadence is rigid — and unforgiving.</div>
+          <p class="pain-body">Monthly through 28 weeks, biweekly through 36, weekly to delivery. That's 14 visits over roughly 36 weeks, on a schedule the patient's body sets — not your calendar. <strong>Miss one</strong> and clinical risk goes up; miss two and the patient is now an outlier in your QI metrics, with documentation requirements to match.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">02</div>
+          <div class="pain-title">Insurance transitions during pregnancy break the workflow.</div>
+          <p class="pain-body">Job changes, employer plan resets, Medicaid renewals (especially in pregnancy-Medicaid states), spousal coverage adjustments. <strong>Insurance can shift mid-pregnancy</strong>, in the middle of an active care plan, and the front desk has to catch it before the next visit's claim gets denied — or the global maternity bill gets unwound.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">03</div>
+          <div class="pain-title">Sensitive communication is a daily requirement, not an edge case.</div>
+          <p class="pain-body">Miscarriage follow-up, fertility appointments, post-partum check-ins, pregnancy-loss bereavement. <strong>Every reminder, every reschedule, every voicemail</strong> needs the right tone — and the default cheerful confirmation copy ("Excited to see you!") is actively harmful for half the situations the front desk handles.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">04</div>
+          <div class="pain-title">Postpartum visit attendance is notoriously poor — and clinically important.</div>
+          <p class="pain-body">The 6-week postpartum visit completes the global maternity package, screens for postpartum depression, and re-establishes well-woman care. <strong>It also has one of the highest no-show rates</strong> in the specialty — partly because the patient is now navigating life with a newborn, partly because the front desk doesn't reach her with the right cadence.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">05</div>
+          <div class="pain-title">Hospital referral coordination is a documentation problem disguised as a logistical one.</div>
+          <p class="pain-body">L&D triage notes, MFM consults, NICU follow-up, anesthesia consults for high-risk deliveries — the office front desk owns this coordination but rarely has tools for it. <strong>Notes that should arrive in the chart</strong> get faxed to the wrong number. Consult requests get lost. The result: clinical risk, and avoidable claim denials.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW PRACTICE AI PLATFORM HELPS -->
+  <section class="sp-section alt">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">How Practice AI Platform helps</div>
+        <h2 class="section-title">Autonomous AI mapped to <em class="em-dark">OB-GYN</em> workflows.</h2>
+        <p class="section-lede">Prenatal-cadence awareness, insurance-transition tracking, and sensitive-topic messaging built for the way an OB-GYN front desk actually communicates.</p>
+      </div>
+
+      <div class="solution-help-grid reveal-stagger">
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-agents"/></svg>Agents Suite</span>
+          <h4>Autonomous AI agents for OB-GYN.</h4>
+          <ul>
+            <li><span><strong>Voice agent</strong> answers calls warmly and books prenatal visits, well-woman exams, and GYN consults — without the hold queue.</span></li>
+            <li><span><strong>Smart confirmations</strong> tuned to prenatal cadence — different language and channels by trimester, with postpartum follow-up automated.</span></li>
+            <li><span><strong>Eligibility intelligence</strong> tracks insurance transitions during pregnancy (Medicaid pregnancy coverage, employer changes, postpartum cliffs) and flags them before they cause a denial.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-insights"/></svg>BI Suite</span>
+          <h4>Real-time visibility into OB-GYN metrics.</h4>
+          <ul>
+            <li><span><strong>Prenatal compliance rate</strong> — visits on cadence vs. cohort baseline.</span></li>
+            <li><span><strong>No-show rate by trimester</strong> — early vs. late prenatal patterns surfaced and trended.</span></li>
+            <li><span><strong>Postpartum visit conversion</strong> — the visit that gets missed most often in OB practice, flagged for proactive outreach.</span></li>
+            <li><span><strong>Insurance-transition denial patterns</strong> — caught before they become aged AR.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW ADVISORY SERVICES HELPS -->
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">How Advisory Services helps</div>
+        <h2 class="section-title">Human-led operating discipline for <em class="em-dark">OB-GYN.</em></h2>
+        <p class="section-lede">Audit of the prenatal pathway, documented sensitive-communication playbooks, and a 90-day plan that protects continuity through pregnancy and postpartum.</p>
+      </div>
+
+      <div class="solution-help-grid cols-3 reveal-stagger">
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-eval"/></svg>Evaluation Framework</span>
+          <h4>Evidence-based assessment.</h4>
+          <ul>
+            <li><span><strong>Half-day on-site</strong> observing prenatal scheduling, insurance-transition handling, and sensitive-topic conversations.</span></li>
+            <li><span><strong>Prenatal-pathway audit</strong> — cadence adherence, postpartum capture, and patient-experience friction points.</span></li>
+            <li><span><strong>Written findings</strong> with leakage sized per pillar and continuity opportunities surfaced.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-sops"/></svg>Operational SOP Definition</span>
+          <h4>Documented playbooks.</h4>
+          <ul>
+            <li><span><strong>Prenatal pathway playbook</strong> — visit cadence, escalation triggers, and patient-education touchpoints.</span></li>
+            <li><span><strong>Postpartum recall workflow</strong> — outreach cadence, contraception conversation, and warm hand-off to primary care.</span></li>
+            <li><span><strong>Sensitive communication playbook</strong> — pregnancy loss, infertility, and other high-touch conversations documented for consistency.</span></li>
+            <li><span><strong>Insurance-transition protocol</strong> — what to verify, when, and how to coach the patient through it.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-strat"/></svg>Strategic Transformation</span>
+          <h4>90-day execution roadmap.</h4>
+          <ul>
+            <li><span><strong>Days 1–30:</strong> prenatal pathway and sensitive-comms SOPs deployed.</span></li>
+            <li><span><strong>Days 31–60:</strong> voice agent + transition-aware eligibility verification live.</span></li>
+            <li><span><strong>Days 61–90:</strong> BI dashboards live for prenatal compliance, postpartum conversion, and AR by trimester.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">Metrics That Matter</div>
+        <h2 class="section-title">What we measure in OB-GYN.</h2>
+        <p class="section-lede">OB-GYN's leading indicators look different from the other specialties. These are the ones we track — with target ranges.</p>
+      </div>
+
+      <div class="metric-strip reveal-stagger">
+        <div class="metric">
+          <div class="metric-num">95%+</div>
+          <div class="metric-lbl"><strong>Prenatal visit adherence</strong> — every scheduled visit attended, with auto-queued cadence from EDD. National baseline tends to sit around 80–85%.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">75%+</div>
+          <div class="metric-lbl"><strong>Postpartum visit completion</strong> within 8 weeks of delivery. National average is roughly 60%.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">90%+</div>
+          <div class="metric-lbl"><strong>Trimester-aware eligibility</strong> verified pre-visit. Specifically catches Medicaid renewal gaps and employer plan shifts.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">85%</div>
+          <div class="metric-lbl"><strong>Annual well-woman recall</strong> conversion within 12 months. The metric that compounds patient retention over decades.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-tag reveal">Get Started</div>
+      <h2 class="cta-headline reveal">See how we work with <span class="grad">OB-GYN.</span></h2>
+      <p class="cta-sub reveal">15 minutes on the phone. Tell us about the postpartum capture rate, the prenatal no-show pattern, the trimester eligibility surprises — we'll tell you what we'd do first.</p>
+      <div class="cta-actions reveal">
+        <a href="../../contact.html" class="btn">Schedule a Discovery Call <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        <a href="index.html" class="btn-secondary">See other specialties</a>
+      </div>
+      <div class="related-row reveal">
+        <a href="primary-care.html" class="related-chip"><svg width="14" height="14"><use href="#i-steth"/></svg>Primary Care</a>
+        <a href="pediatrics.html" class="related-chip"><svg width="14" height="14"><use href="#i-pacifier"/></svg>Pediatrics</a>
+        <a href="optometry.html" class="related-chip"><svg width="14" height="14"><use href="#i-eye-2"/></svg>Optometry</a>
+        <a href="multi-specialty.html" class="related-chip"><svg width="14" height="14"><use href="#i-building"/></svg>Multi-Specialty</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+          Sage Health
+        </div>
+        <p class="footer-tagline">Intelligent operations for the independent practice. Built by operators. Delivered with accountability.</p>
+        <div class="footer-locale">Houston · Dallas</div>
+      </div>
+      <div class="footer-col">
+        <h5>Specialties</h5>
+        <ul>
+          <li><a href="primary-care.html">Primary Care</a></li>
+          <li><a href="pediatrics.html">Pediatrics</a></li>
+          <li><a href="optometry.html">Optometry</a></li>
+          <li><a href="dental.html">Dental</a></li>
+          <li><a href="obgyn.html">OB-GYN</a></li>
+          <li><a href="multi-specialty.html">Multi-Specialty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../advisory/evaluation-framework.html">Evaluation Framework</a></li>
+          <li><a href="../advisory/operational-sops.html">Operational SOP Definition</a></li>
+          <li><a href="../advisory/strategic-transformation.html">Strategic Transformation</a></li>
+          <li><a href="../ai/agentic-suite.html">Practice Agentic Suite</a></li>
+          <li><a href="../ai/practice-bi.html">Practice BI</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../../contact.html">Schedule a Discovery Call</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../insights/index.html">Insights</a></li>
+          <li><a href="mailto:umair@sagehealth.partners">umair@sagehealth.partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="legal">© <span data-year>2026</span> Sage Health Partners. All rights reserved.</div>
+      <div class="credits">sagehealth.partners</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../main.js"></script>
+</body>
+</html>

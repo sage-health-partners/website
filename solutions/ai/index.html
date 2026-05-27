@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Practice AI Platform — Intelligent Operations for Independent Practices · Sage Health</title>
+<meta name="description" content="Advanced intelligent agents purpose-built for the independent practice. Practice Agentic Suite and Practice BI, fully managed.">
+<meta property="og:title" content="Practice AI Platform — Intelligent Operations for Independent Practices · Sage Health">
+<meta property="og:description" content="Practice Agentic Suite and Practice BI — advanced AI purpose-built for the independent practice.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sagehealth.partners/solutions/ai/">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+<link rel="apple-touch-icon" href="../../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V11" stroke="currentColor" stroke-width="1.5" opacity=".6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="12 5 19 12 12 19" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-agents" viewBox="0 0 24 24"><path d="M12 3a3.5 3.5 0 0 0-3.5 3.5v.2a3 3 0 0 0-1.5 5.3 3 3 0 0 0 1.5 5.5v.5a3 3 0 0 0 7 0v-.5a3 3 0 0 0 1.5-5.5 3 3 0 0 0-1.5-5.3v-.2A3.5 3.5 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.5" cy="11" r="1.1" fill="currentColor"/><circle cx="18.5" cy="13" r="1.1" fill="currentColor"/><path d="M7 11h1.5M15.5 13H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".7"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-insights" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="6.25" r=".7" fill="currentColor"/><circle cx="8.4" cy="6.25" r=".7" fill="currentColor"/><polyline points="6.5 16 9.5 13 12.5 15 16 11.5 18 13" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><polyline points="9 12 11 14 15 10" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-eval" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 4V2.5A.5.5 0 0 1 9.5 2h5a.5.5 0 0 1 .5.5V4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.5l2 2 4-4" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sops" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="2.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 11.2v1.4M12 17.4v1.4M8.5 15h1.3M14.2 15h1.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-strat" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6" fill="none"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M5 3h2M13 3h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 13v3a4 4 0 0 0 4 4h.5a3.5 3.5 0 0 0 3.5-3.5V13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="11" r="2" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-pacifier" viewBox="0 0 24 24"><circle cx="12" cy="13" r="6.5" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="13" r="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 6.5V3.5M10 3.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="3.5" r=".7" fill="currentColor"/></symbol>
+    <symbol id="i-eye-2" viewBox="0 0 24 24"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2 0-3.5 1.6-3.5 3.6 0 1.6.5 2.6.9 3.6.3.7.5 1.4.6 2.2.3 2.4.7 5.4 1.5 7.7.3.9 1.1 1.4 2 1.4.8 0 1.5-.5 1.8-1.3l1-2.7c.2-.6.7-1 1.4-1h.6c.7 0 1.2.4 1.4 1l1 2.7c.3.8 1 1.3 1.8 1.3.9 0 1.7-.5 2-1.4.8-2.3 1.2-5.3 1.5-7.7.1-.8.3-1.5.6-2.2.4-1 .9-2 .9-3.6 0-2-1.5-3.6-3.5-3.6-1.2 0-2.2.5-3 1.1-.7.5-1.6.5-2.3 0-.8-.6-1.8-1.1-3-1.1Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.5 12.5 7 12.5 9 9 12 16 14.5 12.5 17 12.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21V8l6-4 6 4v13M15 21V11l6-3v13M3 21h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 11h2M7 14h2M7 17h2M18 14h0M18 17h0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header dark">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">
+      <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+      Sage Health
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+    <nav class="site-nav">
+      <a href="../../index.html" class="nav-link">Home</a>
+      <div class="nav-dropdown active">
+        <button class="nav-dropdown-trigger" type="button">Solutions <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content">
+          <div class="dropdown-col">
+            <h4>Practice AI Platform</h4>
+            <a href="../../solutions/ai/agentic-suite.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-agents"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Agents Suite</span><span class="dd-item-sub">Autonomous AI agents for voice, confirmations, eligibility</span></span>
+            </a>
+            <a href="../../solutions/ai/practice-bi.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-insights"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">BI Suite</span><span class="dd-item-sub">Real-time practice visibility</span></span>
+            </a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Advisory Services</h4>
+            <a href="../../solutions/advisory/evaluation-framework.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-eval"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Front Desk Evaluation Framework</span><span class="dd-item-sub">Evidence-based front desk assessment</span></span>
+            </a>
+            <a href="../../solutions/advisory/operational-sops.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-sops"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Operational SOP Definition</span><span class="dd-item-sub">Documented, standardized processes</span></span>
+            </a>
+            <a href="../../solutions/advisory/strategic-transformation.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-strat"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Strategic Transformation</span><span class="dd-item-sub">90-day execution roadmap</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button">Specialties <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content dropdown-specialties">
+          <div>
+            <div class="spec-mega-head">Specialties</div>
+            <div class="spec-mega-grid">
+              <a href="../../solutions/specialties/primary-care.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-steth"/></svg></span>
+                <span class="spec-mega-name">Primary Care</span>
+              </a>
+              <a href="../../solutions/specialties/pediatrics.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pacifier"/></svg></span>
+                <span class="spec-mega-name">Pediatrics</span>
+              </a>
+              <a href="../../solutions/specialties/optometry.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-eye-2"/></svg></span>
+                <span class="spec-mega-name">Optometry</span>
+              </a>
+              <a href="../../solutions/specialties/dental.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-tooth"/></svg></span>
+                <span class="spec-mega-name">Dental</span>
+              </a>
+              <a href="../../solutions/specialties/obgyn.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pulse"/></svg></span>
+                <span class="spec-mega-name">OB-GYN</span>
+              </a>
+              <a href="../../solutions/specialties/multi-specialty.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-building"/></svg></span>
+                <span class="spec-mega-name">Multi-Specialty</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="../../about.html" class="nav-link">About</a>
+      <a href="../../insights/index.html" class="nav-link">Insights</a>
+      <a href="../../contact.html" class="nav-link">Contact</a>
+      <a href="../../contact.html" class="header-cta">Schedule a Discovery Call <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <div class="menu-backdrop"></div>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-tag reveal">Practice AI Platform</div>
+      <h1 class="reveal"><span class="grad">Advanced AI.</span><br>Purpose-built for your practice.</h1>
+      <p class="hero-lede reveal">Advanced intelligent agents designed from the ground up for the practice on Main Street — packaged, priced, and operated for the way independent practices actually work. Turnkey. Fully managed. You change nothing about your EHR or phones.</p>
+      <div class="hero-actions reveal">
+        <a href="../../contact.html" class="btn">See a Live Demo <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        <a href="agentic-suite.html" class="btn-secondary">Explore the Agentic Suite</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span>Built for scale · Deployed for you</span>
+        <span>Works with your EHR</span>
+        <span>Always on</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE GAP -->
+  <section class="s deepest">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="fortune-badge mb-3"><span class="strong">Purpose-built for independent practices</span> · advanced AI, finally sized for you</div>
+        <h2 class="section-title">The intelligence gap, <span class="grad">closed.</span></h2>
+        <p class="section-lede">Agentic workflows, real-time BI, and conversational interfaces used to require the back office of a hundred-person operation. That constraint is gone. We built the stack from the ground up for practices of one to twenty providers, then handle the operations so you never see the wiring.</p>
+      </div>
+
+      <div class="grid-3 reveal-stagger mt-6">
+        <div class="bignum">
+          <div class="bignum-figure">10×</div>
+          <div class="bignum-label">More inbound coverage<br>than a typical front desk</div>
+        </div>
+        <div class="bignum">
+          <div class="bignum-figure">24/7</div>
+          <div class="bignum-label">Always-on operations,<br>even when the office is closed</div>
+        </div>
+        <div class="bignum">
+          <div class="bignum-figure">$0</div>
+          <div class="bignum-label">EHR replacement required.<br>Works with what you have.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TWO PRODUCTS -->
+  <section class="s dark">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">What's Available Today</div>
+        <h2 class="section-title">Two products. <span class="grad">One platform.</span></h2>
+        <p class="section-lede">The Practice Agentic Suite is the operating layer that absorbs administrative workflows. Practice BI is the visibility layer that proves it's working. Deploy them together or in sequence.</p>
+      </div>
+
+      <div class="grid-2 reveal-stagger">
+        <article class="card-on-dark" style="padding:2.4rem 2.2rem">
+          <div class="card-icon tech"><svg width="22" height="22"><use href="#i-agents"/></svg></div>
+          <span class="tag-ai"><span class="dot"></span>Agentic Platform</span>
+          <div class="card-name tech-grad" style="font-size:1.5rem">Practice Agentic Suite</div>
+          <p class="card-body">Three autonomous agents available today — voice scheduling, smart confirmations, eligibility intelligence — each absorbing a workflow that consumes hours of front-desk time. Fully managed. Operated by us.</p>
+          <ul style="list-style:none;padding:0;margin:1rem 0;display:flex;flex-direction:column;gap:.65rem">
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-mic"/></svg><span>Voice Scheduling Agent — answers and books</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-msg"/></svg><span>Smart Confirmations — multi-turn SMS that handles reschedules</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-shield"/></svg><span>Eligibility Intelligence — verifies insurance before arrival</span></li>
+          </ul>
+          <a href="agentic-suite.html" class="btn-text">Explore the Agentic Suite <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card-on-dark" style="padding:2.4rem 2.2rem">
+          <div class="card-icon tech"><svg width="22" height="22"><use href="#i-insights"/></svg></div>
+          <span class="tag-ai"><span class="dot"></span>Real-time BI</span>
+          <div class="card-name tech-grad" style="font-size:1.5rem">Practice Business Intelligence</div>
+          <p class="card-body">The operating dashboard for your front office. Live phone answer rate, no-show trends, eligibility verification, copay collection — the metrics that move revenue, on the screen you already check.</p>
+          <ul style="list-style:none;padding:0;margin:1rem 0;display:flex;flex-direction:column;gap:.65rem">
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-bolt"/></svg><span>Real-time data — no monthly reporting lag</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-insights"/></svg><span>Trend detection — anomalies surfaced automatically</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.82);font-size:.86rem;line-height:1.5"><svg style="color:var(--accent-bright);flex-shrink:0;margin-top:.18rem" width="14" height="14"><use href="#i-db"/></svg><span>Single source — EHR + phone + agents in one view</span></li>
+          </ul>
+          <a href="practice-bi.html" class="btn-text">Explore Practice BI <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONING PULL QUOTE -->
+  <section class="s deepest">
+    <div class="container-narrow">
+      <div class="ai-pull reveal">
+        <div class="ai-pull-tag">The Positioning</div>
+        <div class="ai-pull-quote">
+          "We built this stack <span class="grad">from the ground up for independent practices.</span> Deployed for the practice on the corner — designed for the way you actually work, operated by us."
+        </div>
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)">— Umair Khalid · Co-Founder &amp; Partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE THREE AGENTS -->
+  <section class="s dark">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">The Agents</div>
+        <h2 class="section-title">Three workflows. Three agents.<br><span class="grad">Operational today.</span></h2>
+      </div>
+
+      <div class="grid-3 reveal-stagger">
+        <article class="card-on-dark">
+          <div class="card-icon tech"><svg width="22" height="22"><use href="#i-mic"/></svg></div>
+          <span class="tag-ai"><span class="dot"></span>Voice AI</span>
+          <div class="card-name">Voice Scheduling Agent</div>
+          <p class="card-body">Answers every call. Books, reschedules, and answers FAQs in natural conversation. Reads live EHR availability. Hands off to a human when nuance is needed.</p>
+        </article>
+        <article class="card-on-dark">
+          <div class="card-icon tech"><svg width="22" height="22"><use href="#i-msg"/></svg></div>
+          <span class="tag-ai"><span class="dot"></span>Conversational SMS</span>
+          <div class="card-name">Smart Confirmations</div>
+          <p class="card-body">Multi-turn conversations, not one-way reminders. Reschedules slot themselves. Cancellations trigger a backfill from the wait list. Confirmed visits trigger copay notices.</p>
+        </article>
+        <article class="card-on-dark">
+          <div class="card-icon tech"><svg width="22" height="22"><use href="#i-shield"/></svg></div>
+          <span class="tag-ai"><span class="dot"></span>Autonomous Verification</span>
+          <div class="card-name">Eligibility Intelligence</div>
+          <p class="card-body">Verifies primary and secondary insurance the night before each visit. Catches plan changes, deductible resets, and prior-auth needs while there's still time to act.</p>
+        </article>
+      </div>
+
+      <p class="tcenter mt-6 reveal" style="font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.72);max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">
+        The agents available today are the foundation. <span class="em">The platform extends to any workflow that consumes your team's time</span> — recall outreach, post-visit collections, referral tracking, and beyond.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW WE DEPLOY -->
+  <section class="s white">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">How We Deploy</div>
+        <h2 class="section-title">You change nothing. We do everything.</h2>
+        <p class="section-lede">No migrations. No new EHR. No IT project. We integrate alongside your existing systems and operate the platform so your team only sees the results.</p>
+      </div>
+
+      <div class="howit reveal">
+        <div class="howit-step tech">
+          <div class="howit-num">1</div>
+          <div class="howit-body">
+            <h4>Discovery &amp; integration mapping</h4>
+            <p>We confirm your EHR, phone system, and SMS provider during the discovery call. Our integration library covers Athena, eClinicalWorks, Epic, NextGen, DrChrono, and the major ambulatory EHRs via native API or RPA bridge.</p>
+          </div>
+        </div>
+        <div class="howit-step tech">
+          <div class="howit-num">2</div>
+          <div class="howit-body">
+            <h4>Configuration &amp; voice tuning</h4>
+            <p>We configure the agents to your practice's workflows, scripts, and tone of voice. The voice agent learns how your front desk actually answers the phone — same warmth, same brand, same handoff patterns.</p>
+          </div>
+        </div>
+        <div class="howit-step tech">
+          <div class="howit-num">3</div>
+          <div class="howit-body">
+            <h4>Soft launch &amp; supervised mode</h4>
+            <p>Agents start in supervised mode — humans review every interaction for the first two weeks. Once accuracy clears our quality bar, the agents go fully autonomous on the workflows they're cleared for.</p>
+          </div>
+        </div>
+        <div class="howit-step tech">
+          <div class="howit-num">4</div>
+          <div class="howit-body">
+            <h4>Operate &amp; optimize</h4>
+            <p>We run the platform. You see the results in Practice BI and a monthly business review. New workflows roll out as the practice needs them — no change orders, no new contracts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-tag reveal">See It In Action</div>
+      <h2 class="cta-headline reveal">Hear an agent. Read a dashboard.<br><span class="grad">Decide for yourself.</span></h2>
+      <p class="cta-sub reveal">A 30-minute live demo with one of the founders. Hear the voice agent on a real call. See Practice BI on a real dataset. Walk away knowing if it fits.</p>
+      <div class="cta-actions reveal">
+        <a href="../../contact.html" class="btn">Schedule a Demo <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        <a href="../advisory/index.html" class="btn-secondary">See Advisory Services</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+          Sage Health
+        </div>
+        <p class="footer-tagline">Intelligent operations for the independent practice. Built by operators. Delivered with accountability.</p>
+        <div class="footer-locale">Houston · Dallas</div>
+      </div>
+      <div class="footer-col">
+        <h5>Practice AI Platform</h5>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="agentic-suite.html">Practice Agentic Suite</a></li>
+          <li><a href="practice-bi.html">Practice BI</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Advisory Services</h5>
+        <ul>
+          <li><a href="../advisory/index.html">Overview</a></li>
+          <li><a href="../advisory/evaluation-framework.html">Evaluation Framework</a></li>
+          <li><a href="../advisory/operational-sops.html">Operational SOP Definition</a></li>
+          <li><a href="../advisory/strategic-transformation.html">Strategic Transformation</a></li>
+          <li><a href="../specialties/index.html">Specialties</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../insights/index.html">Insights</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="mailto:umair@sagehealth.partners">umair@sagehealth.partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="legal">© <span data-year>2026</span> Sage Health Partners. All rights reserved.</div>
+      <div class="credits">sagehealth.partners</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../main.js"></script>
+</body>
+</html>

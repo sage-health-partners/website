@@ -1,0 +1,19 @@
+# macOS metadata
+.DS_Store
+Icon?
+Icon
+
+# Editor/OS
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code local config
+.claude/
+
+# Node
+node_modules/
+
+# Logs
+*.log

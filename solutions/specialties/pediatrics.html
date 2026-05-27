@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pediatric Front Desk Operations — Sage Health Specialties</title>
+<meta name="description" content="Sage Health helps independent pediatric practices fix the front desk — well-child cadence, immunization tracking, parent communication, school forms, and sibling scheduling. Houston · Dallas.">
+<meta property="og:title" content="Pediatric Front Desk Operations — Sage Health Specialties">
+<meta property="og:description" content="Pediatrics needs a front desk that moves faster and communicates clearer. Here's how we help — well-child recall, immunization automation, parent-tuned reminders.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sagehealth.partners/solutions/specialties/pediatrics.html">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+<link rel="apple-touch-icon" href="../../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .sp-hero{padding:7rem 0 4rem;position:relative;overflow:hidden}
+  .sp-hero-bg{position:absolute;inset:0;background:radial-gradient(circle at 20% 40%,rgba(92,158,82,.12) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,90,39,.08) 0%,transparent 50%);pointer-events:none}
+  .sp-hero-inner{position:relative;z-index:1;display:flex;gap:2rem;align-items:center}
+  .sp-hero-icon{width:84px;height:84px;border-radius:18px;background:var(--green-light);color:var(--green);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 8px 24px rgba(45,90,39,.08)}
+  .sp-hero h1{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;letter-spacing:-.026em;line-height:1.08;color:var(--text);margin-bottom:1rem}
+  .sp-hero-sub{font-family:var(--sans);font-size:clamp(1.05rem,1.4vw,1.3rem);font-weight:500;color:var(--muted);line-height:1.55;max-width:640px}
+  .sp-intro{padding:3rem 0 4rem;background:#fff}
+  .sp-intro p{font-size:1.05rem;color:var(--text);line-height:1.75;max-width:740px}
+  .sp-intro p + p{margin-top:1rem}
+  .sp-intro p strong{font-weight:600}
+  .sp-section{padding:5rem 0;border-top:1px solid var(--hairline)}
+  .sp-section.alt{background:#fafcf8}
+  .pain-list{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+  .pain-card{background:#fff;border:1px solid var(--hairline);border-radius:14px;padding:1.85rem 1.7rem;display:flex;flex-direction:column;gap:.75rem}
+  .pain-num{font-family:var(--serif);font-size:.85rem;font-weight:700;color:var(--accent);letter-spacing:.04em}
+  .pain-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text);line-height:1.3;letter-spacing:-.01em}
+  .pain-body{font-size:.94rem;color:var(--muted);line-height:1.65}
+  .pain-body strong{color:var(--text);font-weight:600}
+  .help-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem}
+  .help-pillars{display:flex;flex-direction:column;gap:.85rem}
+  .help-pillar{display:flex;gap:.9rem;padding:1rem 1.1rem;background:#fff;border:1px solid var(--hairline);border-radius:10px}
+  .help-pillar-tag{font-family:'SF Mono',ui-monospace,monospace;font-size:.66rem;font-weight:700;letter-spacing:.06em;color:var(--green);background:var(--green-light);padding:.28rem .55rem;border-radius:6px;flex-shrink:0;align-self:flex-start;white-space:nowrap}
+  .help-pillar-text{font-size:.9rem;color:var(--muted);line-height:1.55}
+  .help-pillar-text strong{color:var(--text);font-weight:600}
+  .help-concrete h4{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text);letter-spacing:-.008em;margin-bottom:1rem}
+  .concrete-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.1rem}
+  .concrete-list li{display:flex;gap:.85rem;align-items:flex-start;padding-left:0}
+  .concrete-list li::before{content:'';width:18px;height:18px;border-radius:50%;background:var(--green-light);flex-shrink:0;margin-top:.18rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5a27' stroke-width='2.5'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:11px 11px;background-repeat:no-repeat;background-position:center}
+  .concrete-list li span{font-size:.94rem;color:var(--muted);line-height:1.6}
+  .concrete-list li span strong{color:var(--text);font-weight:600;font-family:var(--serif)}
+  .metric-strip{margin-top:2.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .metric{background:#fff;border:1px solid var(--hairline);border-radius:12px;padding:1.4rem 1.4rem}
+  .metric-num{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--green);letter-spacing:-.018em;line-height:1.1}
+  .metric-lbl{font-size:.84rem;color:var(--muted);margin-top:.5rem;line-height:1.5}
+  .metric-lbl strong{color:var(--text);font-weight:600}
+  .related-row{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem}
+  .related-chip{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border:1px solid var(--hairline);border-radius:999px;font-size:.82rem;font-weight:600;color:var(--text);background:#fff;transition:background .2s,border-color .2s,color .2s}
+  .related-chip:hover{background:var(--green-light);border-color:var(--accent);color:var(--green)}
+  .related-chip svg{color:var(--accent)}
+  @media (max-width:840px){.sp-hero-inner{flex-direction:column;align-items:flex-start;gap:1.5rem}.pain-list,.help-grid,.metric-strip{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V11" stroke="currentColor" stroke-width="1.5" opacity=".6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="12 5 19 12 12 19" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M5 3h2M13 3h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 13v3a4 4 0 0 0 4 4h.5a3.5 3.5 0 0 0 3.5-3.5V13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="11" r="2" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-pacifier" viewBox="0 0 24 24"><circle cx="12" cy="13" r="6.5" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="13" r="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 6.5V3.5M10 3.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="3.5" r=".7" fill="currentColor"/></symbol>
+    <symbol id="i-eye-2" viewBox="0 0 24 24"><path d="M1 12s4-7.5 11-7.5S23 12 23 12s-4 7.5-11 7.5S1 12 1 12Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2 0-3.5 1.6-3.5 3.6 0 1.6.5 2.6.9 3.6.3.7.5 1.4.6 2.2.3 2.4.7 5.4 1.5 7.7.3.9 1.1 1.4 2 1.4.8 0 1.5-.5 1.8-1.3l1-2.7c.2-.6.7-1 1.4-1h.6c.7 0 1.2.4 1.4 1l1 2.7c.3.8 1 1.3 1.8 1.3.9 0 1.7-.5 2-1.4.8-2.3 1.2-5.3 1.5-7.7.1-.8.3-1.5.6-2.2.4-1 .9-2 .9-3.6 0-2-1.5-3.6-3.5-3.6-1.2 0-2.2.5-3 1.1-.7.5-1.6.5-2.3 0-.8-.6-1.8-1.1-3-1.1Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.5 12.5 7 12.5 9 9 12 16 14.5 12.5 17 12.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21V8l6-4 6 4v13M15 21V11l6-3v13M3 21h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 11h2M7 14h2M7 17h2M18 14h0M18 17h0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-agents" viewBox="0 0 24 24"><path d="M12 3a3.5 3.5 0 0 0-3.5 3.5v.2a3 3 0 0 0-1.5 5.3 3 3 0 0 0 1.5 5.5v.5a3 3 0 0 0 7 0v-.5a3 3 0 0 0 1.5-5.5 3 3 0 0 0-1.5-5.3v-.2A3.5 3.5 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.5" cy="11" r="1.1" fill="currentColor"/><circle cx="18.5" cy="13" r="1.1" fill="currentColor"/><path d="M7 11h1.5M15.5 13H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".7"/></symbol>
+    <symbol id="i-insights" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="6.25" r=".7" fill="currentColor"/><circle cx="8.4" cy="6.25" r=".7" fill="currentColor"/><polyline points="6.5 16 9.5 13 12.5 15 16 11.5 18 13" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-eval" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 4V2.5A.5.5 0 0 1 9.5 2h5a.5.5 0 0 1 .5.5V4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12.5l2 2 4-4" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sops" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="2.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 11.2v1.4M12 17.4v1.4M8.5 15h1.3M14.2 15h1.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-strat" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6" fill="none"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">
+      <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+      Sage Health
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+    <nav class="site-nav">
+      <a href="../../index.html" class="nav-link">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button">Solutions <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content">
+          <div class="dropdown-col">
+            <h4>Practice AI Platform</h4>
+            <a href="../../solutions/ai/agentic-suite.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-agents"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Agents Suite</span><span class="dd-item-sub">Autonomous AI agents for voice, confirmations, eligibility</span></span>
+            </a>
+            <a href="../../solutions/ai/practice-bi.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-insights"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">BI Suite</span><span class="dd-item-sub">Real-time practice visibility</span></span>
+            </a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Advisory Services</h4>
+            <a href="../../solutions/advisory/evaluation-framework.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-eval"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Front Desk Evaluation Framework</span><span class="dd-item-sub">Evidence-based front desk assessment</span></span>
+            </a>
+            <a href="../../solutions/advisory/operational-sops.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-sops"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Operational SOP Definition</span><span class="dd-item-sub">Documented, standardized processes</span></span>
+            </a>
+            <a href="../../solutions/advisory/strategic-transformation.html" class="dd-item">
+              <span class="dd-item-icon"><svg width="16" height="16"><use href="#i-strat"/></svg></span>
+              <span class="dd-item-text"><span class="dd-item-name">Strategic Transformation</span><span class="dd-item-sub">90-day execution roadmap</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown active">
+        <button class="nav-dropdown-trigger" type="button">Specialties <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-content dropdown-specialties">
+          <div>
+            <div class="spec-mega-head">Specialties</div>
+            <div class="spec-mega-grid">
+              <a href="../../solutions/specialties/primary-care.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-steth"/></svg></span>
+                <span class="spec-mega-name">Primary Care</span>
+              </a>
+              <a href="../../solutions/specialties/pediatrics.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pacifier"/></svg></span>
+                <span class="spec-mega-name">Pediatrics</span>
+              </a>
+              <a href="../../solutions/specialties/optometry.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-eye-2"/></svg></span>
+                <span class="spec-mega-name">Optometry</span>
+              </a>
+              <a href="../../solutions/specialties/dental.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-tooth"/></svg></span>
+                <span class="spec-mega-name">Dental</span>
+              </a>
+              <a href="../../solutions/specialties/obgyn.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pulse"/></svg></span>
+                <span class="spec-mega-name">OB-GYN</span>
+              </a>
+              <a href="../../solutions/specialties/multi-specialty.html" class="spec-mega-tile">
+                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-building"/></svg></span>
+                <span class="spec-mega-name">Multi-Specialty</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="../../about.html" class="nav-link">About</a>
+      <a href="../../insights/index.html" class="nav-link">Insights</a>
+      <a href="../../contact.html" class="nav-link">Contact</a>
+      <a href="../../contact.html" class="header-cta">Schedule a Discovery Call <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <div class="menu-backdrop"></div>
+  </div>
+</header>
+
+<main class="page" style="background:linear-gradient(180deg,#fafcf8 0%,#f2f5f0 100%);padding-top:5rem">
+
+  <section class="sp-hero">
+    <div class="sp-hero-bg"></div>
+    <div class="container">
+      <div class="eyebrow reveal" style="margin-bottom:1.4rem"><a href="index.html" style="color:inherit;text-decoration:none">Specialties</a> · Pediatrics</div>
+      <div class="sp-hero-inner reveal">
+        <div class="sp-hero-icon"><svg width="42" height="42"><use href="#i-pacifier"/></svg></div>
+        <div>
+          <h1>We understand <em class="em-dark">pediatric</em> practices.</h1>
+          <p class="sp-hero-sub">A front desk that has to move faster, communicate clearer, and read tone better than any other specialty. Talking to a parent is not the same as talking to a patient. We know.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-intro">
+    <div class="container-narrow">
+      <div class="reveal">
+        <p>Pediatrics has the youngest patient panel, the highest growth rate, and a parent population that talks. A pediatric front desk that runs well becomes the practice's strongest growth channel — parents will tell other parents, in a way they will not in other specialties. A pediatric front desk that runs badly burns the practice's reputation faster than any clinical issue ever will.</p>
+        <p>Most of pediatrics' operational work doesn't happen during the visit. <strong>It happens between visits</strong> — at 7:45 PM when the four-year-old has an earache, at 6:30 AM when the camp form is due tomorrow, at the moment a parent realizes the 12-month well-check should have been three weeks ago.</p>
+        <p>That's the front desk we're building for.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">The Front Desk Challenge</div>
+        <h2 class="section-title">Five things <em class="em-dark">only a pediatric office</em> deals with daily.</h2>
+      </div>
+
+      <div class="pain-list reveal-stagger">
+        <article class="pain-card">
+          <div class="pain-num">01</div>
+          <div class="pain-title">Well-child cadence is a calendar problem disguised as a clinical one.</div>
+          <p class="pain-body">2-month, 4-month, 6-month, 9-month, 12-month, 15-month, 18-month, 24-month — and then annually. Miss one and the parent doesn't remember when the next one should be. <strong>The recall list goes cold quietly</strong>, and the practice loses both the visit revenue and the immunization the visit was supposed to deliver.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">02</div>
+          <div class="pain-title">Immunization tracking is more complex than most front desks have time for.</div>
+          <p class="pain-body">CDC schedule, catch-up logic, school-entry requirements, refusal documentation, state immunization registry sync, VFC inventory — the operational layer beneath every well-check is enormous. <strong>A missed dose</strong> becomes a missed school enrollment, becomes a parent on the phone, becomes a same-day appointment that wasn't supposed to be there.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">03</div>
+          <div class="pain-title">Parent communication runs hot — and tone matters.</div>
+          <p class="pain-body">The parent on hold has a sick child in their lap. The voicemail message you leave will be played back twice. The text reminder you send needs to handle the situation when the child can't take it. <strong>Every front desk interaction</strong> is mediated through a parent's anxiety — and that anxiety has a half-life of zero patience for friction.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">04</div>
+          <div class="pain-title">School and camp forms eat hours that should be billable.</div>
+          <p class="pain-body">Sports physical forms, school enrollment forms, summer camp forms, dental clearance forms, special-education forms. Different formats, different deadlines, different "the doctor needs to fax this directly" requirements. <strong>Front desk hours disappear</strong> into administrative work nobody pays for.</p>
+        </article>
+        <article class="pain-card">
+          <div class="pain-num">05</div>
+          <div class="pain-title">Sibling scheduling is a soft operational tax.</div>
+          <p class="pain-body">"Can I bring the older one in at the same time?" The right answer is usually yes — but only if the template allows it, only if both providers are available, only if the front desk can verify both eligibilities. Done well, sibling visits double per-visit revenue and protect the family relationship. Done badly, they cause same-day scheduling chaos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW PRACTICE AI PLATFORM HELPS -->
+  <section class="sp-section alt">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">How Practice AI Platform helps</div>
+        <h2 class="section-title">Autonomous AI mapped to <em class="em-dark">pediatric</em> workflows.</h2>
+        <p class="section-lede">Parent-friendly communication, vaccine-schedule awareness, and seasonal-volume absorption purpose-built for the pediatric front desk.</p>
+      </div>
+
+      <div class="solution-help-grid reveal-stagger">
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-agents"/></svg>Agents Suite</span>
+          <h4>Autonomous AI agents for pediatrics.</h4>
+          <ul>
+            <li><span><strong>Voice agent</strong> handles parent calls in natural conversation — well-child scheduling, sick-visit triage, school-form requests — without the hold queue.</span></li>
+            <li><span><strong>Smart confirmations</strong> in parent-friendly language with a cadence tuned to well-child vs. sick visits. Reschedules slot themselves.</span></li>
+            <li><span><strong>Vaccine-schedule-aware reminders</strong> — outreach for the next well-child at the right age, not on a generic 12-month timer.</span></li>
+            <li><span><strong>Eligibility intelligence</strong> verifies coverage the night before — catches Medicaid renewals, CHIP transitions, and well-child benefit limits.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-insights"/></svg>BI Suite</span>
+          <h4>Real-time visibility into pediatrics metrics.</h4>
+          <ul>
+            <li><span><strong>Well-child compliance rate</strong> — what percentage of your panel is on cadence.</span></li>
+            <li><span><strong>Same-day sick-visit fill rate</strong> — capacity vs. demand during cold-and-flu season.</span></li>
+            <li><span><strong>Vaccine adherence trends</strong> — refusals, delays, and gap-in-cohort patterns.</span></li>
+            <li><span><strong>School-physical season readiness</strong> — incoming demand vs. open template capacity by month.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW ADVISORY SERVICES HELPS -->
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">How Advisory Services helps</div>
+        <h2 class="section-title">Human-led operating discipline for <em class="em-dark">pediatrics.</em></h2>
+        <p class="section-lede">Assessment of seasonal-volume preparation, documented parent-communication playbooks, and a 90-day plan to install both before next school-physical season.</p>
+      </div>
+
+      <div class="solution-help-grid cols-3 reveal-stagger">
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-eval"/></svg>Evaluation Framework</span>
+          <h4>Evidence-based assessment.</h4>
+          <ul>
+            <li><span><strong>Half-day on-site</strong> observing well-child cadence, sick-visit triage, parent communication, and vaccine-refusal conversations.</span></li>
+            <li><span><strong>Seasonal-template audit</strong> — back-to-school readiness, flu-season capacity, summer-camp form load.</span></li>
+            <li><span><strong>Written findings</strong> sized in dollars per pillar — with specific recall opportunities flagged for the next two seasons.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-sops"/></svg>Operational SOP Definition</span>
+          <h4>Documented playbooks.</h4>
+          <ul>
+            <li><span><strong>Parent communication playbook</strong> — tone, cadence, channel, and escalation paths.</span></li>
+            <li><span><strong>Vaccine-refusal scripts</strong> — empathetic, evidence-based, documented for consistency across the team.</span></li>
+            <li><span><strong>Well-child recall cadence</strong> — outreach scripts for 2-month, 6-month, 12-month, annual milestones.</span></li>
+            <li><span><strong>School-form intake workflow</strong> — turn-around time, billing, and re-request handling.</span></li>
+          </ul>
+        </div>
+        <div class="solution-help-card">
+          <span class="solution-help-tag"><svg width="13" height="13"><use href="#i-strat"/></svg>Strategic Transformation</span>
+          <h4>90-day execution roadmap.</h4>
+          <ul>
+            <li><span><strong>Days 1–30:</strong> recall cadence and parent-comms SOPs live before next seasonal peak.</span></li>
+            <li><span><strong>Days 31–60:</strong> voice agent + well-child reminder agent deployed against your existing phone system.</span></li>
+            <li><span><strong>Days 61–90:</strong> BI dashboards live for vaccine adherence, well-child compliance, and seasonal capacity.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-section">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:0">
+        <div class="eyebrow">Metrics That Matter</div>
+        <h2 class="section-title">What we measure in pediatrics.</h2>
+        <p class="section-lede">Pediatrics has its own leading indicators. These are the ones we track — with the targets we work toward.</p>
+      </div>
+
+      <div class="metric-strip reveal-stagger">
+        <div class="metric">
+          <div class="metric-num">90%+</div>
+          <div class="metric-lbl"><strong>Well-check capture rate</strong> for active panel. Practices without active recall typically sit in the 60–75% range.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">&lt;8%</div>
+          <div class="metric-lbl"><strong>No-show rate</strong> on well-child visits. Sick-visit no-shows are usually lower; well-check no-shows are where the damage is.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">95%+</div>
+          <div class="metric-lbl"><strong>Eligibility verified</strong> pre-visit, with Medicaid renewals and custody-related changes flagged early.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">90%</div>
+          <div class="metric-lbl"><strong>Immunization catch-up</strong> within 60 days of an identified gap. The recall list, actually worked.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-tag reveal">Get Started</div>
+      <h2 class="cta-headline reveal">See how we work with <span class="grad">pediatrics.</span></h2>
+      <p class="cta-sub reveal">15 minutes on the phone. Tell us what your front desk is fielding by 10 AM on a Monday — we'll tell you which two pillars we'd touch first.</p>
+      <div class="cta-actions reveal">
+        <a href="../../contact.html" class="btn">Schedule a Discovery Call <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        <a href="index.html" class="btn-secondary">See other specialties</a>
+      </div>
+      <div class="related-row reveal">
+        <a href="primary-care.html" class="related-chip"><svg width="14" height="14"><use href="#i-steth"/></svg>Primary Care</a>
+        <a href="optometry.html" class="related-chip"><svg width="14" height="14"><use href="#i-eye-2"/></svg>Optometry</a>
+        <a href="obgyn.html" class="related-chip"><svg width="14" height="14"><use href="#i-pulse"/></svg>OB-GYN</a>
+        <a href="multi-specialty.html" class="related-chip"><svg width="14" height="14"><use href="#i-building"/></svg>Multi-Specialty</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
+          Sage Health
+        </div>
+        <p class="footer-tagline">Intelligent operations for the independent practice. Built by operators. Delivered with accountability.</p>
+        <div class="footer-locale">Houston · Dallas</div>
+      </div>
+      <div class="footer-col">
+        <h5>Specialties</h5>
+        <ul>
+          <li><a href="primary-care.html">Primary Care</a></li>
+          <li><a href="pediatrics.html">Pediatrics</a></li>
+          <li><a href="optometry.html">Optometry</a></li>
+          <li><a href="dental.html">Dental</a></li>
+          <li><a href="obgyn.html">OB-GYN</a></li>
+          <li><a href="multi-specialty.html">Multi-Specialty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../advisory/evaluation-framework.html">Evaluation Framework</a></li>
+          <li><a href="../advisory/operational-sops.html">Operational SOP Definition</a></li>
+          <li><a href="../advisory/strategic-transformation.html">Strategic Transformation</a></li>
+          <li><a href="../ai/agentic-suite.html">Practice Agentic Suite</a></li>
+          <li><a href="../ai/practice-bi.html">Practice BI</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../../contact.html">Schedule a Discovery Call</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../insights/index.html">Insights</a></li>
+          <li><a href="mailto:umair@sagehealth.partners">umair@sagehealth.partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="legal">© <span data-year>2026</span> Sage Health Partners. All rights reserved.</div>
+      <div class="credits">sagehealth.partners</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../main.js"></script>
+</body>
+</html>
