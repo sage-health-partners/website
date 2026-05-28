@@ -136,8 +136,7 @@
       'operating at its full potential.'
     ];
     const TYPE_MS = 80;
-    const ERASE_MS = 40;
-    const HOLD_MS = 2000;
+    const HOLD_MS = 3000;
 
     tw.textContent = '';
     let lineIdx = 0;
@@ -150,18 +149,12 @@
         await sleep(TYPE_MS);
       }
     };
-    const eraseLine = async () => {
-      while (tw.textContent.length > 0){
-        tw.textContent = tw.textContent.slice(0, -1);
-        await sleep(ERASE_MS);
-      }
-    };
 
     (async () => {
       while (true){
         await typeLine(taglines[lineIdx]);
         await sleep(HOLD_MS);
-        await eraseLine();
+        tw.textContent = '';
         lineIdx = (lineIdx + 1) % taglines.length;
       }
     })();
