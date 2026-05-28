@@ -372,6 +372,22 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
   -webkit-text-fill-color:transparent;color:transparent;
   filter:drop-shadow(0 0 32px rgba(99,102,241,.18))}
 
+/* Typewriter — reserve space for 4 lines so the hero never bounces as taglines cycle */
+.hero h1.hero-headline{min-height:calc(1.04em * 4)}
+#hero-typewriter{display:inline}
+.tw-cursor{display:inline-block;width:.06em;height:.85em;margin-left:.06em;
+  vertical-align:-0.08em;background:var(--accent-bright);
+  box-shadow:0 0 12px rgba(122,184,109,.55);border-radius:1px;
+  animation:tw-blink 1s steps(2,start) infinite}
+@keyframes tw-blink{to{visibility:hidden}}
+@media (prefers-reduced-motion: reduce){
+  .tw-cursor{animation:none}
+}
+
+/* Particle canvas — sits between the hero gradient pseudo-elements and the content */
+.hero-particles{position:absolute;inset:0;width:100%;height:100%;
+  z-index:0;pointer-events:none;display:block}
+
 .hero-lede{font-family:var(--sans);font-size:clamp(1.15rem,1.55vw,1.45rem);font-weight:600;
   color:rgba(255,255,255,.72);max-width:640px;line-height:1.5;margin-bottom:2.4rem}
 
