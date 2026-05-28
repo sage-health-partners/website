@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a2318"/>
+
+  <!-- Subtle radial vignette for depth -->
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2a3a26" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a2318" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+
+  <!-- Teal accent line, top-left to give brand mark -->
+  <rect x="80" y="120" width="80" height="4" fill="#0D9488" rx="2"/>
+
+  <!-- Eyebrow label -->
+  <text x="80" y="170"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="500" fill="#a8b5a5" letter-spacing="3">
+    SAGE HEALTH
+  </text>
+
+  <!-- Main wordmark, large serif -->
+  <text x="80" y="340"
+        font-family="'PT Serif', 'Times New Roman', Georgia, serif"
+        font-size="110" font-weight="700" fill="#ffffff">
+    Your practice,
+  </text>
+  <text x="80" y="460"
+        font-family="'PT Serif', 'Times New Roman', Georgia, serif"
+        font-size="110" font-weight="700" fill="#ffffff">
+    fully realized.
+  </text>
+
+  <!-- Tagline / supporting copy -->
+  <text x="80" y="540"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="400" fill="#c5d1c2">
+    Expert evaluation. Standardized processes. Autonomous AI agents.
+  </text>
+
+  <!-- Bottom-right teal accent square -->
+  <rect x="1060" y="510" width="60" height="60" fill="#0D9488" rx="6"/>
+  <text x="1090" y="551"
+        font-family="'PT Serif', Georgia, serif"
+        font-size="38" font-weight="700" fill="#1a2318"
+        text-anchor="middle">
+    S
+  </text>
+</svg>
