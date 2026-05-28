@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dr. Sidra Khalid headshot placeholder">
+  <defs>
+    <linearGradient id="sk-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a7232"/>
+      <stop offset="100%" stop-color="#2d5a27"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#sk-bg)"/>
+  <text x="100" y="100" text-anchor="middle" dominant-baseline="central"
+        font-family="PT Serif, Georgia, serif" font-weight="700" font-size="78"
+        fill="#ffffff" letter-spacing="-2">SK</text>
+</svg>

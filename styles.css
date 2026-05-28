@@ -659,6 +659,31 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
   color:var(--accent);margin-top:.4rem;display:block}
 .founder-bio{font-size:.85rem;color:var(--muted);line-height:1.65;margin-top:.6rem}
 
+/* Photo variant — used when avatar is an <img> rather than text initials */
+.avatar.avatar-photo{background:#f4f7f1;object-fit:cover;display:block;padding:0}
+.founder .avatar.avatar-photo{width:96px;height:96px}
+
+/* ════════════════════════════════════════════════════════════════════
+   ADVISORY BOARD
+   ════════════════════════════════════════════════════════════════════ */
+.advisor-grid{gap:1.25rem}
+.advisor-card{background:#fff;border:1px solid var(--hairline);border-radius:14px;
+  padding:1.75rem 1.4rem;display:flex;flex-direction:column;align-items:center;text-align:center;
+  box-shadow:var(--shadow-soft);transition:box-shadow .3s,transform .25s,border-color .25s}
+.advisor-card:hover{box-shadow:var(--shadow-medium);border-color:rgba(45,90,39,.22);transform:translateY(-3px)}
+.advisor-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;
+  background:#f4f7f1;flex-shrink:0;margin-bottom:1.1rem;
+  box-shadow:0 4px 14px -4px rgba(20,30,18,.18)}
+.advisor-name{font-family:var(--serif);font-size:1.08rem;font-weight:700;line-height:1.25;
+  letter-spacing:-.012em;color:var(--text)}
+.advisor-role{font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green);margin-top:.45rem;display:block}
+.advisor-bio{font-size:.84rem;color:var(--muted);line-height:1.65;margin-top:.85rem}
+.advisor-placeholder .advisor-name,
+.advisor-placeholder .advisor-bio{color:var(--muted-soft)}
+.advisor-placeholder .advisor-role{color:var(--muted-soft)}
+.advisor-placeholder{border-style:dashed;background:rgba(255,255,255,.6)}
+
 /* ════════════════════════════════════════════════════════════════════
    DASHBOARD MOCK (technology page)
    ════════════════════════════════════════════════════════════════════ */

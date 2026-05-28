@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Advisory Board Member placeholder">
+  <defs>
+    <linearGradient id="ph2-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7d756b"/>
+      <stop offset="100%" stop-color="#5a544a"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#ph2-bg)"/>
+  <text x="100" y="100" text-anchor="middle" dominant-baseline="central"
+        font-family="PT Serif, Georgia, serif" font-weight="700" font-size="78"
+        fill="#ffffff" letter-spacing="-2" opacity="0.92">A2</text>
+</svg>
