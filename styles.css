@@ -534,8 +534,8 @@ section.s.dark .btn-text,section.s.deepest .btn-text{color:var(--accent-bright)}
    COMPONENTS — Stats, Pills, Tags
    ════════════════════════════════════════════════════════════════════ */
 .stats-group{margin-bottom:2.75rem}
-.stats-group-label{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--muted-soft);text-align:center;margin-bottom:1.5rem}
+.stats-group-label{font-family:var(--serif);font-size:1rem;font-weight:700;
+  color:var(--text);text-align:center;margin-bottom:1.5rem}
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;align-items:start}
 @media(max-width:640px){.stats-row{grid-template-columns:1fr;gap:1.5rem}}
 
