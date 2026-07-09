@@ -782,7 +782,8 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
   border:1px solid var(--hairline);box-shadow:var(--shadow-soft);
   display:flex;flex-direction:column;gap:1.5rem}
 .testimonial-quote{font-family:'Geist',ui-sans-serif,system-ui,var(--sans);font-size:.95rem;
-  color:var(--text);line-height:1.75;font-weight:400;flex:1}
+  color:var(--muted);line-height:1.75;font-weight:400;flex:1}
+.quote-hl{font-weight:600;color:var(--text)}
 .testimonial-quote::before{content:'\201C';font-family:var(--serif);font-size:2.4rem;
   color:var(--accent);line-height:0;vertical-align:-.55rem;margin-right:.2rem}
 .testimonial-author{padding-top:1.25rem}
