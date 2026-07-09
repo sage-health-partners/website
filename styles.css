@@ -769,6 +769,20 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
 .cta-actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
 
 /* ════════════════════════════════════════════════════════════════════
+   TESTIMONIALS
+   ════════════════════════════════════════════════════════════════════ */
+.testimonial-card{background:#fff;border-radius:14px;padding:2rem 2.25rem;
+  border:1px solid var(--hairline);box-shadow:var(--shadow-soft);
+  display:flex;flex-direction:column;gap:1.5rem}
+.testimonial-quote{font-family:var(--serif);font-size:.97rem;color:var(--text);
+  line-height:1.7;font-style:italic;flex:1}
+.testimonial-quote::before{content:'\201C';font-family:var(--serif);font-size:2.4rem;
+  color:var(--accent);line-height:0;vertical-align:-.55rem;margin-right:.2rem;font-style:normal}
+.testimonial-author{padding-top:1.25rem;border-top:1px solid var(--hairline)}
+.testimonial-name{font-weight:700;font-size:.88rem;color:var(--text);letter-spacing:.01em}
+.testimonial-org{font-size:.78rem;color:var(--muted-soft);margin-top:.2rem}
+
+/* ════════════════════════════════════════════════════════════════════
    FOOTER
    ════════════════════════════════════════════════════════════════════ */
 .site-footer{background:var(--bg);color:var(--muted);padding:5rem 0 2.5rem;
