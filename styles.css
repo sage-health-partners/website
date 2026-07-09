@@ -778,7 +778,7 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
   color:var(--text);line-height:1.75;font-weight:400;flex:1}
 .testimonial-quote::before{content:'\201C';font-family:var(--serif);font-size:2.4rem;
   color:var(--accent);line-height:0;vertical-align:-.55rem;margin-right:.2rem}
-.testimonial-author{padding-top:1.25rem;border-top:1px solid var(--hairline)}
+.testimonial-author{padding-top:1.25rem}
 .testimonial-name{font-family:var(--serif);font-weight:700;font-size:.92rem;color:var(--text);letter-spacing:.01em}
 .testimonial-org{font-size:.78rem;color:var(--muted);margin-top:.2rem}
 
