@@ -370,14 +370,13 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
   color:var(--green-mid);margin-bottom:1.6rem}
 .hero-tag::before{content:'';width:24px;height:1px;background:currentColor;opacity:.55}
 
-.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,5.5vw,4.6rem);font-weight:700;
-  letter-spacing:-.028em;line-height:1.04;margin-bottom:1.4rem;max-width:14ch}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:700;
+  letter-spacing:-.028em;line-height:1.1;margin-bottom:1.4rem;max-width:22ch}
 .hero h1 .grad{background:var(--grad-ai-text);-webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:transparent;
   filter:drop-shadow(0 0 32px rgba(99,102,241,.18))}
 
-/* Typewriter — reserve space for 4 lines so the hero never bounces as taglines cycle */
-.hero h1.hero-headline{min-height:calc(1.04em * 4)}
+.hero h1.hero-headline{min-height:0}
 #hero-typewriter{display:inline}
 .tw-cursor{display:inline-block;width:.06em;height:.85em;margin-left:.06em;
   vertical-align:-0.08em;background:var(--accent-bright);
@@ -392,8 +391,8 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
 .hero-particles{position:absolute;inset:0;width:100%;height:100%;
   z-index:0;pointer-events:none;display:block}
 
-.hero-lede{font-family:var(--sans);font-size:clamp(1.15rem,1.55vw,1.45rem);font-weight:400;
-  color:var(--muted);max-width:640px;line-height:1.5;margin-bottom:2.4rem}
+.hero-lede{font-family:var(--sans);font-size:clamp(1.05rem,1.3vw,1.25rem);font-weight:400;
+  color:var(--muted);max-width:780px;line-height:1.5;margin-bottom:2.4rem}
 
 .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
 
