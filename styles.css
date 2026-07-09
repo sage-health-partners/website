@@ -803,7 +803,7 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
 .footer-col a{font-size:.88rem;color:var(--muted);transition:color .2s}
 .footer-col a:hover{color:var(--text)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;
-  padding-top:2rem;border-top:1px solid var(--hairline);flex-wrap:wrap;gap:1rem}
+  padding-top:2rem;flex-wrap:wrap;gap:1rem}
 .footer-bottom .legal{font-size:.78rem;color:var(--muted-soft)}
 .footer-bottom .credits{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--muted-soft)}
 
