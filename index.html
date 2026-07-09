@@ -17,13 +17,11 @@
 <meta name="twitter:title" content="Sage Health">
 <meta name="twitter:description" content="Expert evaluation. Standardized processes. Autonomous AI agents. Purpose-built for independent practices.">
 <meta name="twitter:image" content="https://website-one-alpha-99.vercel.app/images/og-image.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-<link rel="apple-touch-icon" href="favicon.png">
+<link rel="icon" type="image/png" href="/favicon/light.png">
+<link rel="apple-touch-icon" href="/icon/light.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Geist:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -59,14 +57,10 @@
 </svg>
 
 <!-- ════════════ HEADER ════════════ -->
-<header class="site-header dark">
+<header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">
-      <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/>
-        <path d="M12 22V11" opacity=".6"/>
-      </svg>
-      Sage Health
+      <img src="/logo/light.png" alt="Sage Health" height="36" class="logo-img">
     </a>
     <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
       <svg width="22" height="22"><use href="#i-menu"/></svg>
@@ -104,44 +98,9 @@
           </div>
         </div>
       </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger" type="button">Specialties <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="dropdown-content dropdown-specialties">
-          <div>
-            <div class="spec-mega-head">Specialties</div>
-            <div class="spec-mega-grid">
-              <a href="solutions/specialties/primary-care.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-steth"/></svg></span>
-                <span class="spec-mega-name">Primary Care</span>
-              </a>
-              <a href="solutions/specialties/pediatrics.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pacifier"/></svg></span>
-                <span class="spec-mega-name">Pediatrics</span>
-              </a>
-              <a href="solutions/specialties/optometry.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-eye-2"/></svg></span>
-                <span class="spec-mega-name">Optometry</span>
-              </a>
-              <a href="solutions/specialties/dental.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-tooth"/></svg></span>
-                <span class="spec-mega-name">Dental</span>
-              </a>
-              <a href="solutions/specialties/obgyn.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-pulse"/></svg></span>
-                <span class="spec-mega-name">OB-GYN</span>
-              </a>
-              <a href="solutions/specialties/multi-specialty.html" class="spec-mega-tile">
-                <span class="spec-mega-icon"><svg width="18" height="18"><use href="#i-building"/></svg></span>
-                <span class="spec-mega-name">Multi-Specialty</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
       <a href="about.html" class="nav-link">About</a>
-      <a href="insights/index.html" class="nav-link">Insights</a>
       <a href="contact.html" class="nav-link">Contact</a>
-      <a href="contact.html" class="header-cta">
+      <a href="https://calendly.com/sagehealth-consultation/sage-health-consultation" target="_blank" rel="noopener" class="header-cta">
         Schedule a Discovery Call
         <svg width="14" height="14"><use href="#i-arrow"/></svg>
       </a>
@@ -156,7 +115,6 @@
   <section class="hero">
     <canvas class="hero-particles" id="hero-particles" aria-hidden="true"></canvas>
     <div class="container hero-inner">
-      <div class="hero-tag reveal">Sage Health · Intelligent Operations for Independent Practices</div>
       <h1 class="reveal hero-headline">Your practice, <span class="grad" id="hero-typewriter" aria-live="polite">operating at its full potential.</span><span class="tw-cursor" aria-hidden="true"></span></h1>
       <p class="hero-lede reveal">Expert evaluation. Standardized processes. Autonomous AI agents. We bring all three.</p>
       <div class="hero-actions reveal">
@@ -166,16 +124,11 @@
         </a>
         <a href="solutions/index.html" class="btn-secondary">Explore Solutions</a>
       </div>
-      <div class="hero-meta reveal">
-        <span>Purpose-built for independent practices</span>
-        <span>Turnkey · Fully managed</span>
-        <span>Houston · Dallas</span>
-      </div>
     </div>
   </section>
 
   <!-- ════════════ OPPORTUNITY ════════════ -->
-  <section class="s deepest">
+  <section class="s">
     <div class="container">
       <div class="section-head center reveal">
         <div class="eyebrow">The Opportunity</div>
@@ -213,7 +166,7 @@
         </button>
       </div>
 
-      <p class="tcenter mt-6 reveal" style="font-family:var(--serif);font-size:1.05rem;color:rgba(255,255,255,.78);max-width:680px;margin-left:auto;margin-right:auto;font-style:italic;line-height:1.55">
+      <p class="tcenter mt-6 reveal" style="font-family:var(--serif);font-size:1.05rem;color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto;font-style:italic;line-height:1.55">
         Industry research. A four-physician practice baseline. <span class="em">The leakage compounds quietly</span> — across every patient, every day.
       </p>
     </div>
@@ -282,7 +235,7 @@
   </section>
 
   <!-- ════════════ WHAT WE OFFER ════════════ -->
-  <section class="s dark">
+  <section class="s">
     <div class="container">
       <div class="section-head reveal">
         <div class="eyebrow">What We Offer</div>
@@ -290,100 +243,34 @@
       </div>
 
       <div class="grid-2 reveal-stagger">
-        <article class="card-on-dark">
+        <article class="card">
           <div class="card-icon"><svg width="22" height="22"><use href="#i-eval"/></svg></div>
           <div class="card-name">Advisory Services</div>
           <p class="card-body">Operational evaluation, standardized processes, strategic transformation. We observe your practice, identify opportunities, and build the playbook for excellence.</p>
           <ul style="list-style:none;padding:0;margin:.5rem 0 .8rem;display:flex;flex-direction:column;gap:.75rem">
-            <li style="display:flex;align-items:flex-start;gap:.7rem;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent-bright);margin-top:.18rem" width="16" height="16"><use href="#i-eval"/></svg><span><strong style="font-family:var(--serif)">Front Desk Evaluation Framework</strong> — evidence-based assessment of operational workflows.</span></li>
-            <li style="display:flex;align-items:flex-start;gap:.7rem;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent-bright);margin-top:.18rem" width="16" height="16"><use href="#i-sops"/></svg><span><strong style="font-family:var(--serif)">Operational SOP Definition</strong> — documented processes that survive turnover.</span></li>
-            <li style="display:flex;align-items:flex-start;gap:.7rem;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent-bright);margin-top:.18rem" width="16" height="16"><use href="#i-strat"/></svg><span><strong style="font-family:var(--serif)">Strategic Transformation</strong> — 90-day roadmap aligned to growth.</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.7rem;color:var(--text);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent);margin-top:.18rem" width="16" height="16"><use href="#i-eval"/></svg><span><strong style="font-family:var(--serif)">Front Desk Evaluation Framework</strong> — evidence-based assessment of operational workflows.</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.7rem;color:var(--text);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent);margin-top:.18rem" width="16" height="16"><use href="#i-sops"/></svg><span><strong style="font-family:var(--serif)">Operational SOP Definition</strong> — documented processes that survive turnover.</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.7rem;color:var(--text);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent);margin-top:.18rem" width="16" height="16"><use href="#i-strat"/></svg><span><strong style="font-family:var(--serif)">Strategic Transformation</strong> — 90-day roadmap aligned to growth.</span></li>
           </ul>
           <a href="solutions/advisory/index.html" class="btn-text">Explore Advisory <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
         </article>
-        <article class="card-on-dark">
+        <article class="card">
           <div class="card-icon tech"><svg width="22" height="22"><use href="#i-agents"/></svg></div>
           <div class="card-name tech-grad">Practice AI Platform</div>
           <p class="card-body">Intelligent agents and analytics that automate operational workflows across the patient journey. Fully managed. Works with your existing EHR and phone system.</p>
           <ul style="list-style:none;padding:0;margin:.5rem 0 .8rem;display:flex;flex-direction:column;gap:.75rem">
-            <li style="display:flex;align-items:flex-start;gap:.7rem;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent-bright);margin-top:.18rem" width="16" height="16"><use href="#i-agents"/></svg><span><strong style="font-family:var(--serif)">Agents Suite</strong> — Voice, Confirmation, and Eligibility agents.</span></li>
-            <li style="display:flex;align-items:flex-start;gap:.7rem;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent-bright);margin-top:.18rem" width="16" height="16"><use href="#i-insights"/></svg><span><strong style="font-family:var(--serif)">BI Suite</strong> — real-time operational visibility.</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.7rem;color:var(--text);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent);margin-top:.18rem" width="16" height="16"><use href="#i-agents"/></svg><span><strong style="font-family:var(--serif)">Agents Suite</strong> — Voice, Confirmation, and Eligibility agents.</span></li>
+            <li style="display:flex;align-items:flex-start;gap:.7rem;color:var(--text);font-size:.88rem;line-height:1.5"><svg style="flex-shrink:0;color:var(--accent);margin-top:.18rem" width="16" height="16"><use href="#i-insights"/></svg><span><strong style="font-family:var(--serif)">BI Suite</strong> — real-time operational visibility.</span></li>
           </ul>
           <a href="solutions/ai/index.html" class="btn-text">Explore Practice AI Platform <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
         </article>
       </div>
 
-      <p class="tcenter mt-5 reveal" style="font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.7);max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">
+      <p class="tcenter mt-5 reveal" style="font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">
         Every capability extends across the full patient journey. What we deploy today is the starting point — <span class="em">the platform grows with your practice.</span>
       </p>
     </div>
   </section>
-
-  <!-- ════════════ BUILT FOR YOUR SPECIALTY ════════════ -->
-  <section class="s white">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="eyebrow">Built for Your Specialty</div>
-        <h2 class="section-title">Every specialty has its own <em class="em-dark">operational rhythm.</em></h2>
-        <p class="section-lede">The front desk in a pediatric office doesn't run the way it runs in an OB-GYN practice — and neither runs like a dental office. We adapt the framework and the technology to the way your specialty actually works.</p>
-      </div>
-
-      <div class="reveal-stagger spec-grid">
-        <a href="solutions/specialties/primary-care.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-steth"/></svg></div>
-          <div class="card-name">Primary Care / Internal Medicine</div>
-          <p class="card-body">The highest-volume front desk in healthcare. Scheduling complexity, insurance mix, and chronic care coordination create unique operational demands.</p>
-          <div class="spec-foot">Read the Primary Care deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-        <a href="solutions/specialties/pediatrics.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-pacifier"/></svg></div>
-          <div class="card-name">Pediatrics</div>
-          <p class="card-body">Well-child visits, immunization schedules, and parent communication require a front desk that moves faster and communicates clearer than any other specialty.</p>
-          <div class="spec-foot">Read the Pediatrics deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-        <a href="solutions/specialties/optometry.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-eye-2"/></svg></div>
-          <div class="card-name">Optometry / Ophthalmology</div>
-          <p class="card-body">Dual insurance verification (vision + medical), frame/lens benefits, and contact lens management add layers most front desk solutions ignore.</p>
-          <div class="spec-foot">Read the Optometry deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-        <a href="solutions/specialties/dental.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-tooth"/></svg></div>
-          <div class="card-name">Dental / Oral Surgery</div>
-          <p class="card-body">Treatment plan presentation, insurance maximization, and multi-visit scheduling demand front desk precision that directly impacts case acceptance.</p>
-          <div class="spec-foot">Read the Dental deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-        <a href="solutions/specialties/obgyn.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-pulse"/></svg></div>
-          <div class="card-name">OB-GYN</div>
-          <p class="card-body">Prenatal visit cadence, insurance transitions during pregnancy, and sensitive patient communication require both efficiency and empathy.</p>
-          <div class="spec-foot">Read the OB-GYN deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-        <a href="solutions/specialties/multi-specialty.html" class="card spec-card">
-          <div class="card-icon"><svg width="22" height="22"><use href="#i-building"/></svg></div>
-          <div class="card-name">Multi-Specialty Groups</div>
-          <p class="card-body">When multiple providers share a front desk, scheduling complexity multiplies. Different appointment types, different prep requirements, one team.</p>
-          <div class="spec-foot">Read the Multi-Specialty deep dive <svg width="12" height="12" style="vertical-align:-1px"><use href="#i-arrow"/></svg></div>
-        </a>
-      </div>
-
-      <div class="tcenter mt-5 reveal">
-        <a href="solutions/specialties/index.html" class="btn-text">See how we adapt to your specialty <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-    .spec-card{display:flex;flex-direction:column;padding:2rem 1.75rem;text-decoration:none;color:inherit}
-    .spec-card .card-body{margin-bottom:1.1rem;color:var(--muted)}
-    .spec-card .card-name{color:var(--text)}
-    .spec-foot{margin-top:auto;padding-top:1rem;border-top:1px solid var(--hairline);
-      font-size:.84rem;font-weight:600;color:var(--green);display:inline-flex;align-items:center;gap:.4rem}
-    .spec-card:hover .spec-foot svg{transform:translateX(3px);transition:transform .2s}
-    @media (max-width:980px){.spec-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:620px){.spec-grid{grid-template-columns:1fr}}
-  </style>
 
   <!-- ════════════ HOW WE PARTNER ════════════ -->
   <section class="s light">
@@ -448,11 +335,11 @@
       <h2 class="cta-headline reveal">Let's build it<br><span class="grad">together.</span></h2>
       <p class="cta-sub reveal">Independent practice deserves intelligent operations. Start with a 15-minute conversation — we listen, you decide.</p>
       <div class="cta-actions reveal">
-        <a href="contact.html" class="btn">
-          Schedule a Discovery Call
+        <a href="https://calendly.com/sagehealth-consultation/sage-health-consultation" target="_blank" rel="noopener" class="btn">
+        Schedule a Discovery Call
           <svg width="16" height="16"><use href="#i-arrow"/></svg>
         </a>
-        <a href="mailto:umair@sagehealth.partners" class="btn-secondary">Email Umair</a>
+        <a href="mailto:tahir@sagehealth.partners" class="btn-secondary">Email Us</a>
       </div>
     </div>
   </section>
@@ -465,8 +352,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-mark">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ab86d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22V11" opacity=".6"/></svg>
-          Sage Health
+          <img src="/logo/light.png" alt="Sage Health" height="32" class="logo-img">
         </div>
         <p class="footer-tagline">Intelligent operations for the independent practice. Built by operators. Delivered with accountability.</p>
         <div class="footer-locale">Houston · Dallas</div>
@@ -479,33 +365,20 @@
           <li><a href="solutions/advisory/evaluation-framework.html">Evaluation Framework</a></li>
           <li><a href="solutions/advisory/operational-sops.html">Operational SOP Definition</a></li>
           <li><a href="solutions/advisory/strategic-transformation.html">Strategic Transformation</a></li>
-          <li><a href="solutions/specialties/index.html">Specialties</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="insights/index.html">Insights</a></li>
-          <li><a href="compliance/index.html">HIPAA &amp; Compliance</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
+      </div><div class="footer-col">
         <h5>Connect</h5>
         <ul>
-          <li><a href="contact.html">Schedule a Discovery Call</a></li>
-          <li><a href="mailto:umair@sagehealth.partners">umair@sagehealth.partners</a></li>
-          <li><a href="mailto:tahir@sagehealth.partners">tahir@sagehealth.partners</a></li>
+          <li><a href="https://calendly.com/sagehealth-consultation/sage-health-consultation" target="_blank" rel="noopener">Schedule a Discovery Call</a></li>
+          <li><a href="mailto:tahir@sagehealth.partners">Email us</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="legal">© <span data-year>2026</span> Sage Health Partners. All rights reserved.</div>
       <nav class="footer-legal-links" aria-label="Legal" style="display:flex;gap:1.25rem;font-size:.78rem">
-        <a href="privacy.html" style="color:rgba(255,255,255,.55)">Privacy Policy</a>
-        <a href="terms.html" style="color:rgba(255,255,255,.55)">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
       </nav>
       <div class="credits">sagehealth.partners</div>
     </div>
