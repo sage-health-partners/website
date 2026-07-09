@@ -771,16 +771,16 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
 /* ════════════════════════════════════════════════════════════════════
    TESTIMONIALS
    ════════════════════════════════════════════════════════════════════ */
-.testimonial-card{background:#fff;border-radius:14px;padding:2rem 2.25rem;
+.testimonial-card{background:var(--bg-soft);border-radius:14px;padding:2rem 2.25rem;
   border:1px solid var(--hairline);box-shadow:var(--shadow-soft);
   display:flex;flex-direction:column;gap:1.5rem}
-.testimonial-quote{font-family:var(--serif);font-size:.97rem;color:var(--text);
-  line-height:1.7;font-style:italic;flex:1}
+.testimonial-quote{font-family:'Geist',ui-sans-serif,system-ui,var(--sans);font-size:.95rem;
+  color:var(--text);line-height:1.75;font-weight:400;flex:1}
 .testimonial-quote::before{content:'\201C';font-family:var(--serif);font-size:2.4rem;
-  color:var(--accent);line-height:0;vertical-align:-.55rem;margin-right:.2rem;font-style:normal}
+  color:var(--accent);line-height:0;vertical-align:-.55rem;margin-right:.2rem}
 .testimonial-author{padding-top:1.25rem;border-top:1px solid var(--hairline)}
-.testimonial-name{font-weight:700;font-size:.88rem;color:var(--text);letter-spacing:.01em}
-.testimonial-org{font-size:.78rem;color:var(--muted-soft);margin-top:.2rem}
+.testimonial-name{font-family:var(--serif);font-weight:700;font-size:.92rem;color:var(--text);letter-spacing:.01em}
+.testimonial-org{font-size:.78rem;color:var(--muted);margin-top:.2rem}
 
 /* ════════════════════════════════════════════════════════════════════
    FOOTER
