@@ -251,7 +251,7 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
 .dropdown-col .dd-item-name{font-family:var(--serif);font-size:.94rem;font-weight:700;line-height:1.25;letter-spacing:-.005em;color:inherit}
 .dropdown-col .dd-item-sub{font-family:var(--sans);font-size:.74rem;color:var(--muted);line-height:1.45;font-weight:500;letter-spacing:0}
 .site-header.dark .dropdown-col .dd-item-sub{color:rgba(255,255,255,.58)}
-.dd-item-disabled{display:flex;gap:.7rem;align-items:flex-start;padding:.55rem .7rem;border-radius:10px;
+.dd-item-disabled{display:flex;flex-direction:column;gap:.7rem;align-items:flex-start;padding:.55rem .7rem;border-radius:10px;
   color:inherit;text-decoration:none;cursor:default;opacity:.45}
 .dd-coming-soon{display:inline-block;margin-bottom:.6rem}
 

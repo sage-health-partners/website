@@ -1,0 +1,72 @@
+{
+  "advisory": {
+    "label": "Advisory Services",
+    "coming_soon": false,
+    "card_body": "We observe your practice onsite, build a tailored evaluation and framework, document your processes, and guide you through technology transformation.",
+    "services": [
+      {
+        "slug": "practice-observation",
+        "name": "Practice Observation",
+        "nav_desc": "On-site assessment of workflows and patient touchpoints",
+        "card_desc": "On-site assessment of your workflows, staff interactions, and patient touchpoints.",
+        "icon": "i-steth",
+        "url": "solutions/advisory/practice-observation.html"
+      },
+      {
+        "slug": "front-desk-framework",
+        "name": "Front Desk Framework",
+        "nav_desc": "Evidence-based front desk assessment",
+        "card_desc": "Structured evaluation of front desk performance across key operational metrics.",
+        "icon": "i-eval",
+        "url": "solutions/advisory/evaluation-framework.html"
+      },
+      {
+        "slug": "operational-sops",
+        "name": "Operational SOP Definition",
+        "nav_desc": "Documented, standardized processes",
+        "card_desc": "Documented, standardized processes that reduce errors and survive staff turnover.",
+        "icon": "i-sops",
+        "url": "solutions/advisory/operational-sops.html"
+      },
+      {
+        "slug": "tech-transformation",
+        "name": "Tech Transformation",
+        "nav_desc": "Identifying and implementing the right technology",
+        "card_desc": "Identifying and implementing the right technology to automate and scale your operations.",
+        "icon": "i-strat",
+        "url": "solutions/advisory/strategic-transformation.html"
+      }
+    ]
+  },
+  "ai": {
+    "label": "Sage AI Agents",
+    "coming_soon": true,
+    "card_body": "Intelligent agents and analytics that automate operational workflows across the patient journey. Fully managed. Works with your existing EHR and phone system.",
+    "services": [
+      {
+        "slug": "appointment-agent",
+        "name": "Appointment Agent",
+        "nav_desc": "Autonomous voice and scheduling agent",
+        "card_desc": "Autonomous voice and scheduling agent.",
+        "icon": "i-phone",
+        "url": null
+      },
+      {
+        "slug": "eligibility-agent",
+        "name": "Real-Time Eligibility Agent",
+        "nav_desc": "Automated insurance verification",
+        "card_desc": "Automated insurance verification.",
+        "icon": "i-shield",
+        "url": null
+      },
+      {
+        "slug": "bi-agent",
+        "name": "BI Agent",
+        "nav_desc": "Real-time operational visibility",
+        "card_desc": "Real-time operational visibility.",
+        "icon": "i-insights",
+        "url": null
+      }
+    ]
+  }
+}
