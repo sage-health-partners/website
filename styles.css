@@ -248,6 +248,9 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
 .dropdown-col .dd-item-name{font-family:var(--serif);font-size:.94rem;font-weight:700;line-height:1.25;letter-spacing:-.005em;color:inherit}
 .dropdown-col .dd-item-sub{font-family:var(--sans);font-size:.74rem;color:var(--muted);line-height:1.45;font-weight:500;letter-spacing:0}
 .site-header.dark .dropdown-col .dd-item-sub{color:rgba(255,255,255,.58)}
+.dd-item-disabled{display:flex;gap:.7rem;align-items:flex-start;padding:.55rem .7rem;border-radius:10px;
+  color:inherit;text-decoration:none;cursor:default;opacity:.45}
+.dd-coming-soon{display:inline-block;margin-bottom:.6rem}
 
 /* ─── Specialties mega-dropdown (3-column, 2-row grid of icon tiles) ─── */
 .dropdown-content.dropdown-specialties{
@@ -492,6 +495,8 @@ section.s.dark .btn-text,section.s.deepest .btn-text{color:var(--accent-bright)}
 .card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:1.85rem 1.65rem;
   box-shadow:var(--shadow-soft);transition:box-shadow .3s,transform .25s,border-color .3s;display:flex;flex-direction:column;gap:.85rem}
 .card:hover{box-shadow:var(--shadow-medium);border-color:rgba(45,90,39,.22);transform:translateY(-3px)}
+.card.card-static{cursor:default}
+.card.card-static:hover{box-shadow:var(--shadow-soft);border-color:rgba(0,0,0,.08);transform:none}
 .card-on-dark{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.85rem 1.65rem;
   transition:background .3s,transform .25s,border-color .3s;display:flex;flex-direction:column;gap:.85rem}
 .card-on-dark:hover{background:rgba(255,255,255,.075);border-color:rgba(122,184,109,.45);transform:translateY(-3px)}
