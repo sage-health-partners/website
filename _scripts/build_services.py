@@ -40,13 +40,12 @@ def build_nav_dropdown(data: dict, html_file: Path, active: str) -> str:
 
     adv_items = ""
     for svc in advisory["services"]:
-        href = file_to_url(svc["url"], html_file)
         adv_items += (
-            f'            <a href="{href}" class="dd-item">\n'
+            f'            <div class="dd-item">\n'
             f'              <span class="dd-item-icon"><svg width="20" height="20"><use href="#{svc["icon"]}"/></svg></span>\n'
             f'              <span class="dd-item-text"><span class="dd-item-name">{svc["name"]}</span>'
             f'<span class="dd-item-sub">{svc["nav_desc"]}</span></span>\n'
-            f'            </a>\n'
+            f'            </div>\n'
         )
 
     ai_items = ""

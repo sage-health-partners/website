@@ -248,8 +248,7 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
 /* ─── Solutions dropdown — hierarchical (parent heading + indented children with icons) ─── */
 .dropdown-col .dd-item{display:flex;flex-direction:row;gap:.9rem;align-items:flex-start;padding:.6rem .7rem;border-radius:10px;
   transition:background .2s,transform .15s;color:inherit;text-decoration:none}
-.dropdown-col .dd-item:hover{background:rgba(45,90,39,.05);transform:translateX(2px)}
-.site-header.dark .dropdown-col .dd-item:hover{background:rgba(122,184,109,.08)}
+.dropdown-col .dd-item{cursor:default}
 .dropdown-col .dd-item-icon{flex-shrink:0;width:40px;height:40px;border-radius:10px;
   display:flex;align-items:center;justify-content:center;
   background:var(--green-light);color:var(--green)}
@@ -295,7 +294,6 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
   .spec-mega-name{color:var(--text)!important;font-size:.88rem}
   .spec-mega-head{color:var(--muted)!important;margin-bottom:.55rem}
   .dropdown-col .dd-item{padding:.55rem 0}
-  .dropdown-col .dd-item:hover{background:transparent;transform:none}
   .dropdown-col .dd-item-icon{background:var(--green-light)!important;color:var(--green)!important;
     width:26px;height:26px}
   .dropdown-col .dd-item-name{color:var(--text)!important;font-size:.92rem}
@@ -331,8 +329,7 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
   /* Services dropdown + mega-panel always expanded on mobile */
   .nav-dropdown{width:100%;border-top:1px solid var(--hairline)}
   .nav-dropdown::before{display:none}
-  .nav-dropdown-trigger{width:100%;display:flex;justify-content:space-between;align-items:center;
-    color:var(--text);font-size:1.1rem;padding:1rem 0;border-top:none}
+  .nav-dropdown-trigger{display:none}
   .nav-dropdown-trigger::after{display:none}
   .mega-panel{position:static;width:100%;background:transparent;border:none;
     backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;
@@ -676,7 +673,7 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
 /* ════════════════════════════════════════════════════════════════════
    FOUNDERS / AVATARS
    ════════════════════════════════════════════════════════════════════ */
-.founder{display:flex;align-items:flex-start;gap:1.2rem;background:var(--bg-soft);border-radius:14px;
+.founder{display:flex;align-items:flex-start;gap:1.2rem;background:#fff;border-radius:14px;
   padding:1.8rem;border:1px solid var(--hairline);transition:box-shadow .3s,transform .25s}
 .avatar{width:72px;height:72px;border-radius:50%;
   background:linear-gradient(135deg,#3d7535 0%,#2d5a27 100%);
@@ -805,14 +802,14 @@ section.s.dark .tag,section.s.deepest .tag{color:rgba(255,255,255,.7);background
 .service-name{font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--text);display:block;margin-bottom:.25rem}
 .service-desc{font-size:.84rem;color:var(--muted);line-height:1.55;margin:0}
 
-.testimonial-card{background:var(--bg-soft);border-radius:14px;padding:2rem 2.25rem;
-  border:1px solid var(--hairline);box-shadow:var(--shadow-soft);
+.testimonial-card{background:#fff;border-radius:14px;padding:2rem 2.25rem;
+  border:1px solid var(--hairline);
   display:flex;flex-direction:column;gap:1.5rem}
 .testimonial-quote{font-family:'Geist',ui-sans-serif,system-ui,var(--sans);font-size:.95rem;
   color:var(--muted);line-height:1.75;font-weight:400;flex:1}
 .quote-hl{font-weight:600;color:var(--text)}
 .testimonial-quote::before{content:'\201C';font-family:var(--serif);font-size:4rem;
-  color:var(--accent);line-height:0;vertical-align:-.75rem;margin-right:.25rem}
+  color:var(--accent);line-height:1;display:block;margin-bottom:.25rem}
 .testimonial-author{padding-top:1.25rem}
 .testimonial-name{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--text);letter-spacing:.01em}
 .testimonial-org{font-size:.78rem;color:var(--muted);margin-top:.2rem}
