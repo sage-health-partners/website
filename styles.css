@@ -40,8 +40,8 @@ input,textarea,select{font:inherit;color:inherit}
   --grad-ai-text:linear-gradient(135deg,#7ab86d 0%,#4dd4ac 50%,#818cf8 100%);
   --grad-ai-border:linear-gradient(135deg,rgba(92,158,82,.55) 0%,rgba(45,140,158,.55) 50%,rgba(99,102,241,.55) 100%);
   /* Advisory gradient — used for all non-AI gradient text/accents */
-  --grad-advisory:linear-gradient(135deg,#2d5a27 0%,#5c9e52 50%,#7ab86d 100%);
-  --grad-advisory-text:linear-gradient(135deg,#2d5a27 0%,#5c9e52 50%,#7ab86d 100%);
+  --grad-advisory:linear-gradient(135deg,#7ab86d 0%,#5c9e52 50%,#2d5a27 100%);
+  --grad-advisory-text:linear-gradient(135deg,#7ab86d 0%,#5c9e52 50%,#2d5a27 100%);
 }
 
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
@@ -85,7 +85,7 @@ body{font-family:var(--sans);color:var(--text);background:var(--bg-soft);
   box-shadow:0 4px 14px -6px rgba(20,30,18,.3),0 8px 24px -10px rgba(99,102,241,.15);
   transition:transform .2s,box-shadow .3s}
 .header-cta::before{content:'';position:absolute;inset:0;border-radius:8px;padding:1px;
-  background:var(--grad-ai-border);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  background:var(--grad-advisory);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .header-cta:hover{transform:translateY(-1px);
   box-shadow:0 6px 18px -6px rgba(20,30,18,.4),0 12px 28px -10px rgba(99,102,241,.25)}
@@ -466,7 +466,7 @@ section.s.dark .lead-body strong,section.s.deepest .lead-body strong{color:#fff}
   box-shadow:0 6px 18px -6px rgba(20,30,18,.35),0 12px 32px -12px rgba(99,102,241,.18);
   transition:transform .2s,box-shadow .3s,background .3s}
 .btn::before{content:'';position:absolute;inset:0;border-radius:10px;padding:1.5px;
-  background:var(--grad-ai-border);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  background:var(--grad-advisory);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.9;transition:opacity .3s}
 .btn:hover{background:#162320;transform:translateY(-2px);
   box-shadow:0 10px 26px -6px rgba(20,30,18,.45),0 20px 48px -14px rgba(99,102,241,.3)}
