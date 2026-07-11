@@ -20,7 +20,7 @@ NAV_PATTERN = re.compile(
 
 # Matches the Advisory footer col.
 FOOTER_PATTERN = re.compile(
-    r'<div class="footer-col">\s*\n\s*<h5>Advisory</h5>.*?</div>',
+    r'\n\s*<div class="footer-col">\s*\n\s*<h5>Advisory</h5>.*?</div>',
     re.DOTALL,
 )
 
@@ -80,18 +80,7 @@ def build_nav_dropdown(data: dict, html_file: Path, active: str) -> str:
 
 
 def build_footer_advisory(data: dict, html_file: Path) -> str:
-    items = ""
-    for svc in data["advisory"]["services"]:
-        href = file_to_url(svc["url"], html_file)
-        items += f'          <li><a href="{href}">{svc["name"]}</a></li>\n'
-    return (
-        f'<div class="footer-col">\n'
-        f'        <h5>Advisory</h5>\n'
-        f'        <ul>\n'
-        f'{items}'
-        f'        </ul>\n'
-        f'      </div>'
-    )
+    return ""  # Advisory footer column removed
 
 
 def build_service_list(services: list) -> str:
