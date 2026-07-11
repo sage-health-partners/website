@@ -844,7 +844,7 @@ details[open] .faq-q::after{transform:rotate(45deg)}
 .footer-col h5{font-size:.6rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
   color:var(--muted-soft);margin-bottom:1.2rem}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
-.footer-col a{font-size:.88rem;color:var(--muted);transition:color .2s}
+.footer-col a{font-size:.88rem;color:var(--muted);transition:color .2s;white-space:nowrap}
 .footer-col a:hover{color:var(--text)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;
   padding-top:2rem;flex-wrap:wrap;gap:1rem}
