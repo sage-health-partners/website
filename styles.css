@@ -569,10 +569,10 @@ section.s.dark .btn-text,section.s.deepest .btn-text{color:var(--accent-bright)}
 .stat-pill-icon{width:44px;height:44px;border-radius:11px;
   display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .stat-pill-icon.red{background:rgba(185,28,28,.08);color:#B91C1C}
-.stat-pill-icon.green{background:rgba(15,118,110,.1);color:#0F766E}
+.stat-pill-icon.green{background:rgba(45,90,39,.1);color:#2d5a27}
 .stat-pill-num{font-family:var(--serif);font-size:1.5rem;font-weight:400;line-height:1;letter-spacing:-.02em}
 .stat-pill-num.red{color:#B91C1C}
-.stat-pill-num.green{color:#0F766E}
+.stat-pill-num.green{color:#2d5a27}
 .stat-pill-label{font-size:.74rem;color:var(--muted);margin-top:.22rem;line-height:1.4;display:block}
 
 .tag{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.18em;
